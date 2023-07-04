@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>800</integer>
+    <key>copyright</key>
+    <string>Copyright 2023 The Computer Modern Classic Project Authors (https://github.com/razvanm/computer-modern-classic)</string>
+    <key>descender</key>
+    <integer>-200</integer>
+    <key>familyName</key>
+    <string>Computer Modern Classic</string>
+    <key>guidelines</key>
+    <array/>
+    <key>italicAngle</key>
+    <real>0.0</real>
+    <key>openTypeHeadCreated</key>
+    <string>2023/07/03 22:33:31</string>
+    <key>openTypeHheaAscender</key>
+    <integer>850</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-350</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameLicense</key>
+    <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://scripts.sil.org/OFL</string>
+    <key>openTypeNameVersion</key>
+    <string>Version 1.001</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>850</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-350</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>GOOG</string>
+    <key>openTypeOS2WinDescent</key>
+    <integer>252</integer>
+    <key>postscriptBlueValues</key>
+    <array/>
+    <key>postscriptFamilyBlues</key>
+    <array/>
+    <key>postscriptFamilyOtherBlues</key>
+    <array/>
+    <key>postscriptFontName</key>
+    <string>ComputerModernClassic-Regular</string>
+    <key>postscriptForceBold</key>
+    <false/>
+    <key>postscriptFullName</key>
+    <string>Computer Modern Classic</string>
+    <key>postscriptOtherBlues</key>
+    <array/>
+    <key>postscriptStemSnapH</key>
+    <array/>
+    <key>postscriptStemSnapV</key>
+    <array/>
+    <key>postscriptUnderlinePosition</key>
+    <integer>-100</integer>
+    <key>postscriptUnderlineThickness</key>
+    <integer>50</integer>
+    <key>postscriptWeightName</key>
+    <string>Regular</string>
+    <key>styleMapFamilyName</key>
+    <string>Computer Modern Classic</string>
+    <key>styleMapStyleName</key>
+    <string>regular</string>
+    <key>styleName</key>
+    <string>Regular</string>
+    <key>unitsPerEm</key>
+    <integer>1000</integer>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>1</integer>
+  </dict>
+</plist>

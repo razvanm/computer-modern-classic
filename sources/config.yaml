@@ -1,7 +1,7 @@
 sources:
-  - Rubik.glyphs
-  - Rubik-Italic.glyphs
+  - ComputerModernClassic-Regular.ufo
+  - ComputerModernClassic-Italic.ufo
 axisOrder:
   - wght
   - ital
-familyName: Rubik
+familyName: Computer Modern Classic
