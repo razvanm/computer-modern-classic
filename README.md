@@ -20,7 +20,9 @@
 One consequence of the first requirement is that the font will have, at least
 for now, far less characters than other Computer Modern fonts.
 
-![Sample Image](documentation/image1.png)
+![Sample Image 1](documentation/image1.png)
+
+![Sample Image 2](documentation/image2.png)
 
 ## About
 
