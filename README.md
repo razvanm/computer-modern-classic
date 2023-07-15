@@ -20,9 +20,13 @@
 One consequence of the first requirement is that the font will have, at least
 for now, far less characters than other Computer Modern fonts.
 
-![Sample Image 1](documentation/image1.png)
+![Computer Modern Classic Regular](documentation/regular1.png)
 
-![Sample Image 2](documentation/image2.png)
+![Computer Modern Classic Italic](documentation/italic1.png)
+
+![Computer Modern Classic Regular - all characters](documentation/regular2.png)
+
+![Computer Modern Classic Italic - all characters](documentation/italic2.png)
 
 ## About
 

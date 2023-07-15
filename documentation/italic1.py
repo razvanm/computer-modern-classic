@@ -15,15 +15,15 @@ import sys
 import argparse
 
 # Constants, these are the main "settings" for the image
-WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 2048, 128, 1
-FONT_PATH = "fonts/ttf/ComputerModernClassic-Regular.ttf"
+WIDTH, HEIGHT, MARGIN, FRAMES = 2048, 1024, 128, 1
+FONT_PATH = "fonts/ttf/ComputerModernClassic-Italic.ttf"
 FONT_LICENSE = "OFL v1.1"
 AUXILIARY_FONT = "Helvetica"
 AUXILIARY_FONT_SIZE = 48
-BIG_TEXT = "Aa"
-BIG_TEXT_FONT_SIZE = 1024
-BIG_TEXT_SIDE_MARGIN = MARGIN * 3.1
-BIG_TEXT_BOTTOM_MARGIN = MARGIN * 5.5
+BIG_TEXT1 = "ABCDEFGHIJKLMNOPQRSTUVXWYZ"
+BIG_TEXT2 = "abcdefghijklmnoprqstuvwxyz"
+BIG_TEXT3 = "0123456789!@#$%&*()-=+[];:,./?"
+BIG_TEXT_FONT_SIZE = 80
 GRID_VIEW = False # Change this to "True" for a grid overlay
 
 # Handel the "--output" flag
@@ -88,11 +88,9 @@ def draw_main_text():
     stroke(None)
     font(FONT_PATH)
     fontSize(BIG_TEXT_FONT_SIZE)
-    # Adjust this line to center main text manually.
-    # TODO: This should be done automatically when drawbot-skia
-    # has support for textBox() and FormattedString
-    #text(BIG_TEXT, ((WIDTH / 2) - MARGIN * 4.75, (HEIGHT / 2) - MARGIN * 2.5))
-    text(BIG_TEXT, (BIG_TEXT_SIDE_MARGIN, BIG_TEXT_BOTTOM_MARGIN))
+    text(BIG_TEXT1, (WIDTH/2, HEIGHT/2 + 100), align="center")
+    text(BIG_TEXT2, (WIDTH/2, HEIGHT/2), align="center")
+    text(BIG_TEXT3, (WIDTH/2, HEIGHT/2 - 100), align="center")
 
 
 # Divider lines
