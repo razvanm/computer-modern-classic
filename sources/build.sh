@@ -13,19 +13,19 @@ set -x
 cd "$(dirname "$0")"
 
 # Math symbols.
-mftrace --potrace cmsy10
+./mftrace/mftrace.py --potrace cmsy10
 
 # Math italic symbols.
-mftrace --potrace cmmi10
+./mftrace/mftrace.py --potrace cmmi10
 
-mftrace --potrace cmr10
+./mftrace/mftrace.py --potrace cmr10
 fontforge -quiet -script fix.py \
   cmr10.pfa \
   ComputerModernClassic-Regular.ufo
 fix_fontinfo ComputerModernClassic-Regular.ufo/fontinfo.plist
 ./fix-fontinfo.py ComputerModernClassic-Regular.ufo
 
-mftrace --potrace cmti10
+./mftrace/mftrace.py --potrace cmti10
 fontforge -quiet -script fix.py \
   cmti10.pfa \
   ComputerModernClassic-Italic.ufo
