@@ -61,7 +61,8 @@ def grid():
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
 def draw_background():
     newPage(WIDTH, HEIGHT)
-    fill(1)
+    # Use the background color from Knuth's web page: #F8F4E7.
+    fill(0xF8/256.0, 0xF4/256.0, 0xE7/256.0)
     rect(-2, -2, WIDTH + 2, HEIGHT + 2)
     if GRID_VIEW:
         grid()
