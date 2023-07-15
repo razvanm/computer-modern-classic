@@ -1,4 +1,4 @@
-#!@PYTHON@
+#!/usr/bin/env python
 
 #
 # this file is part of mftrace - a tool to generate scalable fonts from MF sources  
@@ -49,7 +49,7 @@ if prefix != '@' + 'prefix@':
 
 if datadir == '@' + "datadir" + "@":
     datadir = os.getcwd ()
-    bindir =  os.getcwd ()
+    bindir =  os.getcwd () + '/mftrace'
     
 sys.path.append (datadir)
 
