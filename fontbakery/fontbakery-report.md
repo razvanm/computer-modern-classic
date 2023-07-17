@@ -2,21 +2,12 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[7] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+<details><summary><b>[8] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
 
 	- 0x2026 (HORIZONTAL ELLIPSIS)
-
-
-	- 0x005C (REVERSE SOLIDUS)
-
-
-	- 0x007B (LEFT CURLY BRACKET)
-
-
-	- 0x007D (RIGHT CURLY BRACKET)
 
 
 	- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
@@ -25,25 +16,7 @@ Fontbakery version: 0.8.13
 	- 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
-	- 0x0022 (QUOTATION MARK)
-
-
-	- 0x0027 (APOSTROPHE)
-
-
 	- 0x007C (VERTICAL LINE)
-
-
-	- 0x00D7 (MULTIPLICATION SIGN)
-
-
-	- 0x00F7 (DIVISION SIGN)
-
-
-	- 0x003E (GREATER-THAN SIGN)
-
-
-	- 0x003C (LESS-THAN SIGN)
 
 
 	- 0x0308 (COMBINING DIAERESIS)
@@ -59,9 +32,6 @@ Fontbakery version: 0.8.13
 
 
 	- 0x0304 (COMBINING MACRON)
-
-
-	- 0x00B0 (DEGREE SIGN)
 
 
 	- 0x00C1 (LATIN CAPITAL LETTER A WITH ACUTE)
@@ -568,12 +538,6 @@ Fontbakery version: 0.8.13
 	- 0x00BA (MASCULINE ORDINAL INDICATOR)
 
 
-	- 0x00B7 (MIDDLE DOT)
-
-
-	- 0x2022 (BULLET)
-
-
 	- 0x005F (LOW LINE)
 
 
@@ -587,12 +551,6 @@ Fontbakery version: 0.8.13
 
 
 	- 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
-
-
-	- 0x00B6 (PILCROW SIGN)
-
-
-	- 0x00A7 (SECTION SIGN)
 
 
 	- 0x00A9 (COPYRIGHT SIGN)
@@ -610,19 +568,7 @@ Fontbakery version: 0.8.13
 	- 0x20AC (EURO SIGN)
 
 
-	- 0x00A3 (POUND SIGN)
-
-
 	- 0x00A5 (YEN SIGN)
-
-
-	- 0x2212 (MINUS SIGN)
-
-
-	- 0x007E (TILDE)
-
-
-	- 0x005E (CIRCUMFLEX ACCENT)
 
 
 	- 0x0307 (COMBINING DOT ABOVE)
@@ -682,20 +628,25 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 The following glyphs do not have the recommended number of contours:
 
-	- Glyph name: dollar	Contours detected: 2	Expected: 1, 3 or 5
-
 	- Glyph name: percent	Contours detected: 4	Expected: 5
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
-
-	- Glyph name: dollar	Contours detected: 2	Expected: 1, 3 or 5
 
 	- Glyph name: fi	Contours detected: 1	Expected: 3 
 
 	- Glyph name: percent	Contours detected: 4	Expected: 5
  [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
+
+
+* ⚠ **WARN** The most common width is 778 among a set of 5 math glyphs.
+The following math glyphs have a different width, though:
+
+Width = 767:
+equal, plus
+ [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
 
 
@@ -719,6 +670,12 @@ The following glyphs do not have the recommended number of contours:
 
 	* at (U+0040): L<<661.0,78.0>--<681.0,79.0>> -> L<<681.0,79.0>--<701.0,79.0>>
 
+	* braceleft (U+007B): L<<283.0,144.0>--<284.0,5.0>> -> L<<284.0,5.0>--<285.0,-133.0>>
+
+	* braceleft (U+007B): L<<285.0,634.0>--<284.0,495.0>> -> L<<284.0,495.0>--<283.0,357.0>>
+
+	* dollar (U+0024): L<<266.0,750.0>--<266.0,727.0>> -> L<<266.0,727.0>--<267.0,705.0>>
+
 	* ffi (U+FB03): L<<590.0,432.0>--<726.0,431.0>> -> L<<726.0,431.0>--<861.0,431.0>>
 
 	* ffl (U+FB04): L<<132.0,431.0>--<175.0,431.0>> -> L<<175.0,431.0>--<217.0,432.0>>
@@ -736,19 +693,10 @@ The following glyphs do not have the recommended number of contours:
 	- 0x2026 (HORIZONTAL ELLIPSIS)
 
 
-	- 0x005C (REVERSE SOLIDUS)
-
-
 	- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
 	- 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
-
-
-	- 0x0022 (QUOTATION MARK)
-
-
-	- 0x0027 (APOSTROPHE)
 
 
 	- 0x007C (VERTICAL LINE)
@@ -767,9 +715,6 @@ The following glyphs do not have the recommended number of contours:
 
 
 	- 0x0304 (COMBINING MACRON)
-
-
-	- 0x00B0 (DEGREE SIGN)
 
 
 	- 0x00C1 (LATIN CAPITAL LETTER A WITH ACUTE)
@@ -1306,16 +1251,7 @@ The following glyphs do not have the recommended number of contours:
 	- 0x20AC (EURO SIGN)
 
 
-	- 0x00A3 (POUND SIGN)
-
-
 	- 0x00A5 (YEN SIGN)
-
-
-	- 0x007E (TILDE)
-
-
-	- 0x005E (CIRCUMFLEX ACCENT)
 
 
 	- 0x0307 (COMBINING DOT ABOVE)
@@ -1435,6 +1371,12 @@ The following glyphs do not have the recommended number of contours:
 	* braceleft (U+007B): L<<283.0,144.0>--<284.0,5.0>> -> L<<284.0,5.0>--<285.0,-133.0>>
 
 	* braceleft (U+007B): L<<285.0,634.0>--<284.0,495.0>> -> L<<284.0,495.0>--<283.0,357.0>>
+
+	* circumflex (U+005E): L<<116.0,559.0>--<183.0,626.0>> -> L<<183.0,626.0>--<250.0,694.0>>
+
+	* circumflex (U+005E): L<<134.0,540.0>--<125.0,549.0>> -> L<<125.0,549.0>--<116.0,559.0>>
+
+	* circumflex (U+005E): L<<383.0,559.0>--<374.0,549.0>> -> L<<374.0,549.0>--<365.0,540.0>>
 
 	* circumflex (U+02C6): L<<116.0,559.0>--<183.0,626.0>> -> L<<183.0,626.0>--<250.0,694.0>>
 
@@ -1557,7 +1499,7 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 2 | 13 | 244 | 13 | 203 | 0 |
+| 0 | 2 | 14 | 244 | 13 | 202 | 0 |
 | 0% | 0% | 3% | 51% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
