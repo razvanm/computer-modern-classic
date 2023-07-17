@@ -96,6 +96,8 @@
     <string>at.glif</string>
     <key>b</key>
     <string>b.glif</string>
+    <key>backslash</key>
+    <string>backslash.glif</string>
     <key>braceleft</key>
     <string>braceleft.glif</string>
     <key>braceright</key>
@@ -226,6 +228,8 @@
     <string>periodcentered.glif</string>
     <key>plus</key>
     <string>plus.glif</string>
+    <key>poundsign</key>
+    <string>poundsign.glif</string>
     <key>q</key>
     <string>q.glif</string>
     <key>question</key>
