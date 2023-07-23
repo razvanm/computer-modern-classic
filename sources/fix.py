@@ -1,20 +1,32 @@
 import fontforge
 import sys
 
+def copy_symbol(src, dest, src_glyph_name, dest_glyph_name, dest_glyph_unicode):
+    print('Copying "%s" to "%s" (U+%04x)...' % (
+        src_glyph_name, dest_glyph_name, dest_glyph_unicode))
+    g = src[src_glyph_name]
+    src.selection.select(src_glyph_name)
+    src.copy()
+    c = dest.createChar(dest_glyph_unicode, dest_glyph_name)
+    dest.selection.select(dest_glyph_name)
+    dest.paste()
+
 def copy_symbols(src, dest, glyph_names):
     for name in glyph_names:
         g = src[name]
-        src.selection.select(name)
-        print('Copying "%s" (0x%04x)' % (g.glyphname, g.unicode))
-        src.copy()
-        c = dest.createChar(g.unicode, g.glyphname)
-        dest.selection.select(g.glyphname)
-        dest.paste()
+        copy_symbol(src, dest, g.glyphname, g.glyphname, g.unicode)
 
 cmsy10 = fontforge.open('cmsy10.pfa')
 cmmi10 = fontforge.open('cmmi10.pfa')
 cmti10 = fontforge.open('cmti10.pfa')
 cmr10 = fontforge.open('cmr10.pfa')
+ecrm10 = fontforge.open('ecrm10.pfa')
+tcrm10 = fontforge.open('tcrm10.pfa')
+ecti10 = fontforge.open('ecti10.pfa')
+tcti10 = fontforge.open('tcti10.pfa')
+# Some useful information about euro symbol: https://texfaq.org/FAQ-euro
+eurorm = fontforge.open('eurorm.pfa')
+euroit = fontforge.open('euroit.pfa')
 
 f = fontforge.open(sys.argv[1])
 
@@ -25,6 +37,15 @@ space.vwidth = 500
 nbspace = f.createChar(0xA0, 'uni00A0')
 nbspace.width = 500
 nbspace.vwidth = 500
+
+# Create "ellipsis" (U+2026) by making a copy of the "period".
+period = f['period']
+ellipsis = f.createChar(0x2026, 'ellipsis')
+ellipsis.addReference('period')
+(_, _, xoffset, _) = period.boundingBox()
+ellipsis.addReference('period', psMat.translate(xoffset, 0))
+ellipsis.addReference('period', psMat.translate(2*xoffset, 0))
+ellipsis.width = round(period.width + 2*xoffset)
 
 # Make the CIRCUMFLEX ACCENT (U+005E) a copy of "circumflex" (U+02C6,
 # 0x5E in cmr10).
@@ -43,27 +64,28 @@ f['hungarumlaut'].altuni = (0x0022,)
 # Make the DEGREE SIGN (U+00B0) a copy of "ring" (U+02DA, 0x17 in cmr10).
 f['ring'].altuni = (0x00B0,)
 
-copy_symbols(cmsy10, f, [
-    'bullet', 'minus', 'multiply', 'divide', 'periodcentered', 'paragraph',
-    'section', 'braceleft', 'braceright', 'backslash'])
+EC_COMMON = ['quotedbl', 'less', 'equal', 'greater', 'backslash',
+             'underscore', 'braceleft', 'bar', 'braceright',
+             'section']
 
-copy_symbols(cmmi10, f, ['less', 'greater', 'slash'])
+TC_COMMON = ['quotesingle', 'angleleft', 'minus', 'angleright',
+             'perthousand', 'bullet', 'trademark', 'uni2031', 'cent',
+             'yen', 'copyright', 'registered', 'degree',
+             'plusminus', 'paragraph', 'periodcentered',
+             'multiply', 'divide']
 
 if sys.argv[2].endswith('-Regular.ufo'):
-    # Copy the POUND SIGN (U+00A3) from cmti10 where it shows up under the
-    # 'dollar' name (0x26 is the position in cmti10).
-    cmti10.selection.select('dollar')
-    cmti10.copy()
-    pound_sign = f.createChar(0x00A3, 'poundsign')
-    f.selection.select(pound_sign.glyphname)
-    f.paste()
-    cmti10.close()
+    copy_symbols(ecrm10, f, EC_COMMON + ['sterling'])
+    copy_symbols(tcrm10, f, TC_COMMON)
+    copy_symbol(eurorm, f, 'E', 'euro', 0x20AC)
 
 if sys.argv[2].endswith('-Italic.ufo'):
     # The "dollar" is actually the pound sign.
     f[0x0024].glyphname = 'poundsign'
     f[0x0024].unicode = 0x00A3
 
-    copy_symbols(cmr10, f, ['dollar'])
+    copy_symbols(ecti10, f, EC_COMMON + ['dollar'])
+    copy_symbols(tcti10, f, TC_COMMON)
+    copy_symbol(euroit, f, 'E', 'euro', 0x20AC)
 
 f.generate(sys.argv[2])

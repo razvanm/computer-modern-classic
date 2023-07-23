@@ -15,11 +15,11 @@
     <key>italicAngle</key>
     <real>0.0</real>
     <key>openTypeHeadCreated</key>
-    <string>2023/07/17 00:15:37</string>
+    <string>2023/07/22 23:40:31</string>
     <key>openTypeHheaAscender</key>
-    <integer>850</integer>
+    <integer>900</integer>
     <key>openTypeHheaDescender</key>
-    <integer>-350</integer>
+    <integer>-300</integer>
     <key>openTypeHheaLineGap</key>
     <integer>0</integer>
     <key>openTypeNameLicense</key>
@@ -35,15 +35,17 @@
     <key>openTypeOS2Type</key>
     <array/>
     <key>openTypeOS2TypoAscender</key>
-    <integer>850</integer>
+    <integer>900</integer>
     <key>openTypeOS2TypoDescender</key>
-    <integer>-350</integer>
+    <integer>-300</integer>
     <key>openTypeOS2TypoLineGap</key>
     <integer>0</integer>
     <key>openTypeOS2VendorID</key>
     <string>GOOG</string>
+    <key>openTypeOS2WinAscent</key>
+    <integer>872</integer>
     <key>openTypeOS2WinDescent</key>
-    <integer>252</integer>
+    <integer>272</integer>
     <key>postscriptBlueValues</key>
     <array/>
     <key>postscriptFamilyBlues</key>

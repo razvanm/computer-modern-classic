@@ -11,7 +11,7 @@ f.info.copyright = 'Copyright 2023 The Computer Modern Classic Project Authors (
 # Fix for FontBakery:com.google.fonts/check/vendor_id.
 f.info.openTypeOS2VendorID = 'GOOG'
 
-# Fix for FontBakery:com.google.fonts/check/font_names
+# Fix for FontBakery:com.google.fonts/check/font_names.
 f.info.familyName = 'Computer Modern Classic'
 f.info.postscriptFullName = 'Computer Modern Classic'
 f.info.styleMapFamilyName = 'Computer Modern Classic'
@@ -34,15 +34,15 @@ f.info.openTypeNameLicense = 'This Font Software is licensed under the SIL Open 
 f.info.openTypeNameLicenseURL = 'https://scripts.sil.org/OFL'
 
 # Fix for FontBakery:com.google.fonts/check/family/win_ascent_and_descent.
-# TODO: find a better logic for these.
-f.info.openTypeOS2WinAscent = f.info.openTypeOS2TypoAscender
-f.info.openTypeOS2WinDescent = 252
+f.info.openTypeOS2WinAscent = 872
+f.info.openTypeOS2WinDescent = 272
 
-# com.FontBakery:com.google.fonts/check/vertical_metrics
+# Fix for com.FontBakery:com.google.fonts/check/vertical_metrics.
+# Reference: https://googlefonts.github.io/gf-guide/metrics.html
 f.info.openTypeOS2TypoLineGap = 0
 f.info.openTypeHheaLineGap = 0
-f.info.openTypeHheaAscender += 100
-f.info.openTypeHheaDescender -= 100
+f.info.openTypeHheaAscender = 900
+f.info.openTypeHheaDescender = -300
 
 # Fix for FontBakery:com.google.fonts/check/os2_metrics_match_hhea.
 f.info.openTypeOS2TypoAscender = f.info.openTypeHheaAscender
