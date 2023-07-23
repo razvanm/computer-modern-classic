@@ -2,7 +2,7 @@
 
 Fontbakery version: 0.8.13
 
-<details><summary><b>[8] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+<details><summary><b>[10] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -576,6 +576,10 @@ Fontbakery version: 0.8.13
 
 	- 0x02DB (OGONEK)
  [code: missing-codepoints]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 273, but got 272 instead. [code: descent]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -633,21 +637,13 @@ plus
 
 * ⚠ **WARN** The following glyphs have colinear vectors:
 
-	* A (U+0041): L<<493.0,584.0>--<400.0,422.0>> -> L<<400.0,422.0>--<308.0,260.0>>
-
 	* B (U+0042): L<<323.0,367.0>--<404.0,367.0>> -> L<<404.0,367.0>--<485.0,368.0>>
 
 	* Delta (U+2206): L<<149.0,71.0>--<399.0,70.0>> -> L<<399.0,70.0>--<649.0,70.0>>
 
 	* H (U+0048): L<<327.0,371.0>--<464.0,371.0>> -> L<<464.0,371.0>--<601.0,372.0>>
 
-	* Z (U+005A): L<<701.0,659.0>--<440.0,347.0>> -> L<<440.0,347.0>--<179.0,36.0>>
-
-	* a (U+0061): L<<352.0,110.0>--<379.0,217.0>> -> L<<379.0,217.0>--<406.0,325.0>>
-
 	* at (U+0040): L<<661.0,78.0>--<681.0,79.0>> -> L<<681.0,79.0>--<701.0,79.0>>
-
-	* euro (U+20AC): L<<149.0,372.0>--<169.0,401.0>> -> L<<169.0,401.0>--<189.0,431.0>>
 
 	* euro (U+20AC): L<<247.0,371.0>--<198.0,371.0>> -> L<<198.0,371.0>--<149.0,372.0>>
 
@@ -664,7 +660,13 @@ plus
 	* numbersign (U+0023): L<<658.0,368.0>--<736.0,367.0>> -> L<<736.0,367.0>--<814.0,367.0>> 
 
 	* yen (U+00A5): L<<393.0,242.0>--<396.0,258.0>> -> L<<396.0,258.0>--<400.0,274.0>> [code: found-colinear-vectors]
-</div></details><br></div></details><details><summary><b>[8] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have jaggy segments:
+
+	* trademark (U+2122): B<<476.0,650.5>-<474.0,669.0>-<474.0,670.0>>/B<<474.0,670.0>-<468.0,646.0>-<458.0,607.5>> = 14.036243467926457 [code: found-jaggy-segments]
+</div></details><br></div></details><details><summary><b>[9] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -1238,6 +1240,10 @@ plus
 
 	- 0x02DB (OGONEK)
  [code: missing-codepoints]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 273, but got 272 instead. [code: descent]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -1288,8 +1294,6 @@ The following glyphs do not have the recommended number of contours:
 
 	* A (U+0041): L<<233.0,260.0>--<345.0,259.0>> -> L<<345.0,259.0>--<457.0,259.0>>
 
-	* AE (U+00C6): L<<256.0,312.0>--<216.0,202.0>> -> L<<216.0,202.0>--<177.0,92.0>>
-
 	* AE (U+00C6): L<<500.0,312.0>--<500.0,181.0>> -> L<<500.0,181.0>--<501.0,49.0>>
 
 	* AE (U+00C6): L<<501.0,634.0>--<500.0,489.0>> -> L<<500.0,489.0>--<500.0,344.0>>
@@ -1320,33 +1324,11 @@ The following glyphs do not have the recommended number of contours:
 
 	* Z (U+005A): L<<543.0,0.0>--<302.0,0.0>> -> L<<302.0,0.0>--<61.0,1.0>>
 
-	* Z (U+005A): L<<555.0,659.0>--<357.0,347.0>> -> L<<357.0,347.0>--<159.0,36.0>>
-
 	* at (U+0040): L<<588.0,476.0>--<588.0,334.0>> -> L<<588.0,334.0>--<589.0,192.0>>
 
 	* bar (U+007C): L<<119.0,-235.0>--<119.0,251.0>> -> L<<119.0,251.0>--<120.0,737.0>>
 
-	* braceleft (U+007B): L<<284.0,144.0>--<285.0,5.0>> -> L<<285.0,5.0>--<286.0,-133.0>>
-
-	* braceleft (U+007B): L<<286.0,634.0>--<285.0,495.0>> -> L<<285.0,495.0>--<284.0,357.0>>
-
-	* braceright (U+007D): L<<214.0,-133.0>--<215.0,5.0>> -> L<<215.0,5.0>--<216.0,144.0>>
-
-	* braceright (U+007D): L<<216.0,357.0>--<215.0,495.0>> -> L<<215.0,495.0>--<214.0,634.0>>
-
-	* braceright (U+007D): L<<284.0,636.0>--<285.0,497.0>> -> L<<285.0,497.0>--<286.0,359.0>>
-
-	* braceright (U+007D): L<<286.0,142.0>--<285.0,3.0>> -> L<<285.0,3.0>--<284.0,-135.0>>
-
-	* circumflex (U+005E): L<<116.0,559.0>--<183.0,626.0>> -> L<<183.0,626.0>--<250.0,694.0>>
-
-	* circumflex (U+005E): L<<134.0,540.0>--<125.0,549.0>> -> L<<125.0,549.0>--<116.0,559.0>>
-
 	* circumflex (U+005E): L<<383.0,559.0>--<374.0,549.0>> -> L<<374.0,549.0>--<365.0,540.0>>
-
-	* circumflex (U+02C6): L<<116.0,559.0>--<183.0,626.0>> -> L<<183.0,626.0>--<250.0,694.0>>
-
-	* circumflex (U+02C6): L<<134.0,540.0>--<125.0,549.0>> -> L<<125.0,549.0>--<116.0,559.0>>
 
 	* circumflex (U+02C6): L<<383.0,559.0>--<374.0,549.0>> -> L<<374.0,549.0>--<365.0,540.0>>
 
@@ -1356,15 +1338,9 @@ The following glyphs do not have the recommended number of contours:
 
 	* euro (U+20AC): L<<167.0,252.0>--<111.0,252.0>> -> L<<111.0,252.0>--<56.0,253.0>>
 
-	* euro (U+20AC): L<<56.0,253.0>--<68.0,282.0>> -> L<<68.0,282.0>--<81.0,312.0>>
-
-	* euro (U+20AC): L<<56.0,372.0>--<68.0,401.0>> -> L<<68.0,401.0>--<81.0,431.0>>
-
 	* f (U+0066): L<<178.0,399.0>--<178.0,228.0>> -> L<<178.0,228.0>--<179.0,57.0>>
 
 	* ff (U+FB00): L<<449.0,399.0>--<449.0,228.0>> -> L<<449.0,228.0>--<450.0,57.0>>
-
-	* four (U+0034): L<<300.0,567.0>--<178.0,382.0>> -> L<<178.0,382.0>--<57.0,198.0>>
 
 	* four (U+0034): L<<57.0,198.0>--<178.0,197.0>> -> L<<178.0,197.0>--<300.0,197.0>>
 
@@ -1374,11 +1350,7 @@ The following glyphs do not have the recommended number of contours:
 
 	* plus (U+002B): L<<369.0,270.0>--<369.0,420.0>> -> L<<369.0,420.0>--<370.0,570.0>>
 
-	* q (U+0071): L<<390.0,351.0>--<408.0,396.0>> -> L<<408.0,396.0>--<427.0,442.0>>
-
 	* registered (U+00AE): L<<433.0,429.0>--<432.0,340.0>> -> L<<432.0,340.0>--<432.0,251.0>>
-
-	* yen (U+00A5): L<<331.0,273.0>--<288.0,343.0>> -> L<<288.0,343.0>--<246.0,413.0>>
 
 	* yen (U+00A5): L<<418.0,219.0>--<418.0,138.0>> -> L<<418.0,138.0>--<419.0,57.0>> 
 
@@ -1444,30 +1416,6 @@ The following glyphs do not have the recommended number of contours:
 
 	* braceleft (U+007B): L<<216.0,-135.0>--<215.0,3.0>>
 
-	* braceleft (U+007B): L<<284.0,144.0>--<285.0,5.0>>
-
-	* braceleft (U+007B): L<<285.0,495.0>--<284.0,357.0>>
-
-	* braceleft (U+007B): L<<285.0,5.0>--<286.0,-133.0>>
-
-	* braceleft (U+007B): L<<286.0,634.0>--<285.0,495.0>>
-
-	* braceright (U+007D): L<<214.0,-133.0>--<215.0,5.0>>
-
-	* braceright (U+007D): L<<215.0,495.0>--<214.0,634.0>>
-
-	* braceright (U+007D): L<<215.0,5.0>--<216.0,144.0>>
-
-	* braceright (U+007D): L<<216.0,357.0>--<215.0,495.0>>
-
-	* braceright (U+007D): L<<284.0,636.0>--<285.0,497.0>>
-
-	* braceright (U+007D): L<<285.0,3.0>--<284.0,-135.0>>
-
-	* braceright (U+007D): L<<285.0,497.0>--<286.0,359.0>>
-
-	* braceright (U+007D): L<<286.0,142.0>--<285.0,3.0>>
-
 	* f (U+0066): L<<178.0,228.0>--<179.0,57.0>>
 
 	* ff (U+FB00): L<<449.0,228.0>--<450.0,57.0>>
@@ -1489,8 +1437,8 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 2 | 14 | 244 | 13 | 202 | 0 |
-| 0% | 0% | 3% | 51% | 3% | 43% | 0% |
+| 0 | 4 | 15 | 244 | 13 | 199 | 0 |
+| 0% | 1% | 3% | 51% | 3% | 42% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
