@@ -88,4 +88,12 @@ if sys.argv[2].endswith('-Italic.ufo'):
     copy_symbols(tcti10, f, TC_COMMON)
     copy_symbol(euroit, f, 'E', 'euro', 0x20AC)
 
+# TODO: tune this step based on diffing with the original bitmaps.
+for name in f:
+    g = f[name]
+    g.simplify()
+    g.round()
+    g.canonicalContours()
+    g.canonicalStart()
+
 f.generate(sys.argv[2])

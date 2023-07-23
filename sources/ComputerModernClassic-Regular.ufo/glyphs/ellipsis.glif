@@ -3,8 +3,8 @@
   <advance width="661"/>
   <unicode hex="2026"/>
   <outline>
-    <component base="period" xOffset="383.384"/>
-    <component base="period" xOffset="191.692"/>
+    <component base="period" xOffset="383"/>
+    <component base="period" xOffset="192"/>
     <component base="period"/>
   </outline>
 </glyph>
