@@ -47,15 +47,12 @@ def grid():
     strokeWidth(2)
     STEP_X, STEP_Y = 0, MARGIN
     INCREMENT_X, INCREMENT_Y = MARGIN, MARGIN
-    # rect(MARGIN, MARGIN, WIDTH - (MARGIN * 2), HEIGHT - (MARGIN * 2))
     for x in range(19):
         polygon((MARGIN + STEP_X, MARGIN * 2), (MARGIN + STEP_X, HEIGHT - MARGIN * 2))
         STEP_X += INCREMENT_X
     for y in range(19):
         polygon((MARGIN, MARGIN + STEP_Y), (WIDTH - MARGIN, MARGIN + STEP_Y))
         STEP_Y += INCREMENT_Y
-    # polygon((WIDTH / 2, 0), (WIDTH / 2, HEIGHT))
-    # polygon((0, HEIGHT / 2), (WIDTH, HEIGHT / 2))
 
 
 # Draw the page/frame and a grid if "GRID_VIEW" is set to "True"
@@ -75,11 +72,11 @@ def draw_main_text():
     fill(0)
     stroke(None)
     font(FONT_PATH)
-    fontSize(GLYPH_SIZE)
+    fontSize(GLYPH_SIZE*0.8)
     x = MARGIN
     y = HEIGHT - MARGIN * 2 - GLYPH_SIZE
     for (unicode, name) in ttFont.getBestCmap().items():
-        text(chr(unicode), (x, y))
+        text(chr(unicode), (x+GLYPH_SIZE/2, y), align="center")
         x += GLYPH_SIZE
         if (x + GLYPH_SIZE) > (WIDTH - MARGIN):
             y -= GLYPH_SIZE
