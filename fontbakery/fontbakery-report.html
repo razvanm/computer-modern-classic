@@ -95,16 +95,10 @@
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/glyph_coverage&gt;</div>
 
 <details><summary>🔥 <strong>fonts/ttf/ComputerModernClassic-Italic.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
-<pre><code>- 0x2026 (HORIZONTAL ELLIPSIS)
-
-
-- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
+<pre><code>- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
 - 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
-
-
-- 0x007C (VERTICAL LINE)
 
 
 - 0x0308 (COMBINING DIAERESIS)
@@ -626,9 +620,6 @@
 - 0x00BA (MASCULINE ORDINAL INDICATOR)
 
 
-- 0x005F (LOW LINE)
-
-
 - 0x201A (SINGLE LOW-9 QUOTATION MARK)
 
 
@@ -639,24 +630,6 @@
 
 
 - 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
-
-
-- 0x00A9 (COPYRIGHT SIGN)
-
-
-- 0x00AE (REGISTERED SIGN)
-
-
-- 0x2122 (TRADE MARK SIGN)
-
-
-- 0x00A2 (CENT SIGN)
-
-
-- 0x20AC (EURO SIGN)
-
-
-- 0x00A5 (YEN SIGN)
 
 
 - 0x0307 (COMBINING DOT ABOVE)
@@ -694,16 +667,10 @@
 <p>[code: missing-codepoints]</p>
 </span></li></ul></div></details>
 <details><summary>🔥 <strong>fonts/ttf/ComputerModernClassic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>🔥 FAIL</span><span class='details_text'><p>Missing required codepoints:</p>
-<pre><code>- 0x2026 (HORIZONTAL ELLIPSIS)
-
-
-- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
+<pre><code>- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
 - 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
-
-
-- 0x007C (VERTICAL LINE)
 
 
 - 0x0308 (COMBINING DIAERESIS)
@@ -1225,9 +1192,6 @@
 - 0x00BA (MASCULINE ORDINAL INDICATOR)
 
 
-- 0x005F (LOW LINE)
-
-
 - 0x201A (SINGLE LOW-9 QUOTATION MARK)
 
 
@@ -1238,24 +1202,6 @@
 
 
 - 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
-
-
-- 0x00A9 (COPYRIGHT SIGN)
-
-
-- 0x00AE (REGISTERED SIGN)
-
-
-- 0x2122 (TRADE MARK SIGN)
-
-
-- 0x00A2 (CENT SIGN)
-
-
-- 0x20AC (EURO SIGN)
-
-
-- 0x00A5 (YEN SIGN)
 
 
 - 0x0307 (COMBINING DOT ABOVE)
@@ -1333,11 +1279,15 @@ FONT_FAMILY_NAME = 'Computer Modern Classic' / SUBFAMILY_NAME = 'Regular'</p>
 
 - Glyph name: Q	Contours detected: 3	Expected: 2
 
+- Glyph name: uni2031	Contours detected: 8	Expected: 9
+
 - Glyph name: Q	Contours detected: 3	Expected: 2
 
-- Glyph name: fi	Contours detected: 1	Expected: 3 
+- Glyph name: fi	Contours detected: 1	Expected: 3
 
-- Glyph name: percent	Contours detected: 4	Expected: 5
+- Glyph name: percent	Contours detected: 4	Expected: 5 
+
+- Glyph name: uni2031	Contours detected: 8	Expected: 9
 </code></pre>
 <p>[code: contour-count]</p>
 </span></li></ul></div></details>
@@ -1347,21 +1297,25 @@ FONT_FAMILY_NAME = 'Computer Modern Classic' / SUBFAMILY_NAME = 'Regular'</p>
 
 - Glyph name: Q	Contours detected: 3	Expected: 2
 
+- Glyph name: uni2031	Contours detected: 8	Expected: 9
+
 - Glyph name: Q	Contours detected: 3	Expected: 2
 
-- Glyph name: fi	Contours detected: 1	Expected: 3 
+- Glyph name: fi	Contours detected: 1	Expected: 3
 
-- Glyph name: percent	Contours detected: 4	Expected: 5
+- Glyph name: percent	Contours detected: 4	Expected: 5 
+
+- Glyph name: uni2031	Contours detected: 8	Expected: 9
 </code></pre>
 <p>[code: contour-count]</p>
 </span></li></ul></div></details>
 <h3>Check math signs have the same width.</h3>
 <div>Check ID: &lt;FontBakeryCheck:com.google.fonts/check/math_signs_width&gt;</div>
 
-<details><summary>⚠️ <strong>fonts/ttf/ComputerModernClassic-Italic.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 778 among a set of 5 math glyphs.
+<details><summary>⚠️ <strong>fonts/ttf/ComputerModernClassic-Italic.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The most common width is 766 among a set of 7 math glyphs.
 The following math glyphs have a different width, though:</p>
 <p>Width = 767:
-equal, plus
+plus
 [code: width-outliers]</p>
 </span></li></ul></div></details>
 <h2>&lt;Section: fontbakery.profiles.gpos&gt; ⚠️⚠️</h2>
@@ -1391,11 +1345,11 @@ equal, plus
 
 * at (U+0040): L&lt;&lt;661.0,78.0&gt;--&lt;681.0,79.0&gt;&gt; -&gt; L&lt;&lt;681.0,79.0&gt;--&lt;701.0,79.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;283.0,144.0&gt;--&lt;284.0,5.0&gt;&gt; -&gt; L&lt;&lt;284.0,5.0&gt;--&lt;285.0,-133.0&gt;&gt;
+* euro (U+20AC): L&lt;&lt;149.0,372.0&gt;--&lt;169.0,401.0&gt;&gt; -&gt; L&lt;&lt;169.0,401.0&gt;--&lt;189.0,431.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;285.0,634.0&gt;--&lt;284.0,495.0&gt;&gt; -&gt; L&lt;&lt;284.0,495.0&gt;--&lt;283.0,357.0&gt;&gt;
+* euro (U+20AC): L&lt;&lt;247.0,371.0&gt;--&lt;198.0,371.0&gt;&gt; -&gt; L&lt;&lt;198.0,371.0&gt;--&lt;149.0,372.0&gt;&gt;
 
-* dollar (U+0024): L&lt;&lt;266.0,750.0&gt;--&lt;266.0,727.0&gt;&gt; -&gt; L&lt;&lt;266.0,727.0&gt;--&lt;267.0,705.0&gt;&gt;
+* euro (U+20AC): L&lt;&lt;339.0,432.0&gt;--&lt;573.0,431.0&gt;&gt; -&gt; L&lt;&lt;573.0,431.0&gt;--&lt;807.0,431.0&gt;&gt;
 
 * ffi (U+FB03): L&lt;&lt;590.0,432.0&gt;--&lt;726.0,431.0&gt;&gt; -&gt; L&lt;&lt;726.0,431.0&gt;--&lt;861.0,431.0&gt;&gt;
 
@@ -1403,9 +1357,11 @@ equal, plus
 
 * germandbls (U+00DF): L&lt;&lt;133.0,431.0&gt;--&lt;176.0,431.0&gt;&gt; -&gt; L&lt;&lt;176.0,431.0&gt;--&lt;218.0,432.0&gt;&gt;
 
-* numbersign (U+0023): L&lt;&lt;285.0,133.0&gt;--&lt;207.0,133.0&gt;&gt; -&gt; L&lt;&lt;207.0,133.0&gt;--&lt;130.0,134.0&gt;&gt; 
+* numbersign (U+0023): L&lt;&lt;285.0,133.0&gt;--&lt;207.0,133.0&gt;&gt; -&gt; L&lt;&lt;207.0,133.0&gt;--&lt;130.0,134.0&gt;&gt;
 
-* numbersign (U+0023): L&lt;&lt;658.0,368.0&gt;--&lt;736.0,367.0&gt;&gt; -&gt; L&lt;&lt;736.0,367.0&gt;--&lt;814.0,367.0&gt;&gt; [code: found-colinear-vectors]
+* numbersign (U+0023): L&lt;&lt;658.0,368.0&gt;--&lt;736.0,367.0&gt;&gt; -&gt; L&lt;&lt;736.0,367.0&gt;--&lt;814.0,367.0&gt;&gt; 
+
+* yen (U+00A5): L&lt;&lt;393.0,242.0&gt;--&lt;396.0,258.0&gt;&gt; -&gt; L&lt;&lt;396.0,258.0&gt;--&lt;400.0,274.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
 </span></li></ul></div></details>
 <details><summary>⚠️ <strong>fonts/ttf/ComputerModernClassic-Regular.ttf</strong></summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
@@ -1447,9 +1403,19 @@ equal, plus
 
 * at (U+0040): L&lt;&lt;588.0,476.0&gt;--&lt;588.0,334.0&gt;&gt; -&gt; L&lt;&lt;588.0,334.0&gt;--&lt;589.0,192.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;283.0,144.0&gt;--&lt;284.0,5.0&gt;&gt; -&gt; L&lt;&lt;284.0,5.0&gt;--&lt;285.0,-133.0&gt;&gt;
+* bar (U+007C): L&lt;&lt;119.0,-235.0&gt;--&lt;119.0,251.0&gt;&gt; -&gt; L&lt;&lt;119.0,251.0&gt;--&lt;120.0,737.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;285.0,634.0&gt;--&lt;284.0,495.0&gt;&gt; -&gt; L&lt;&lt;284.0,495.0&gt;--&lt;283.0,357.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;284.0,144.0&gt;--&lt;285.0,5.0&gt;&gt; -&gt; L&lt;&lt;285.0,5.0&gt;--&lt;286.0,-133.0&gt;&gt;
+
+* braceleft (U+007B): L&lt;&lt;286.0,634.0&gt;--&lt;285.0,495.0&gt;&gt; -&gt; L&lt;&lt;285.0,495.0&gt;--&lt;284.0,357.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;214.0,-133.0&gt;--&lt;215.0,5.0&gt;&gt; -&gt; L&lt;&lt;215.0,5.0&gt;--&lt;216.0,144.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;216.0,357.0&gt;--&lt;215.0,495.0&gt;&gt; -&gt; L&lt;&lt;215.0,495.0&gt;--&lt;214.0,634.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;284.0,636.0&gt;--&lt;285.0,497.0&gt;&gt; -&gt; L&lt;&lt;285.0,497.0&gt;--&lt;286.0,359.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;286.0,142.0&gt;--&lt;285.0,3.0&gt;&gt; -&gt; L&lt;&lt;285.0,3.0&gt;--&lt;284.0,-135.0&gt;&gt;
 
 * circumflex (U+005E): L&lt;&lt;116.0,559.0&gt;--&lt;183.0,626.0&gt;&gt; -&gt; L&lt;&lt;183.0,626.0&gt;--&lt;250.0,694.0&gt;&gt;
 
@@ -1465,6 +1431,14 @@ equal, plus
 
 * dollar (U+0024): L&lt;&lt;266.0,750.0&gt;--&lt;266.0,727.0&gt;&gt; -&gt; L&lt;&lt;266.0,727.0&gt;--&lt;267.0,705.0&gt;&gt;
 
+* euro (U+20AC): L&lt;&lt;156.0,371.0&gt;--&lt;106.0,371.0&gt;&gt; -&gt; L&lt;&lt;106.0,371.0&gt;--&lt;56.0,372.0&gt;&gt;
+
+* euro (U+20AC): L&lt;&lt;167.0,252.0&gt;--&lt;111.0,252.0&gt;&gt; -&gt; L&lt;&lt;111.0,252.0&gt;--&lt;56.0,253.0&gt;&gt;
+
+* euro (U+20AC): L&lt;&lt;56.0,253.0&gt;--&lt;68.0,282.0&gt;&gt; -&gt; L&lt;&lt;68.0,282.0&gt;--&lt;81.0,312.0&gt;&gt;
+
+* euro (U+20AC): L&lt;&lt;56.0,372.0&gt;--&lt;68.0,401.0&gt;&gt; -&gt; L&lt;&lt;68.0,401.0&gt;--&lt;81.0,431.0&gt;&gt;
+
 * f (U+0066): L&lt;&lt;178.0,399.0&gt;--&lt;178.0,228.0&gt;&gt; -&gt; L&lt;&lt;178.0,228.0&gt;--&lt;179.0,57.0&gt;&gt;
 
 * ff (U+FB00): L&lt;&lt;449.0,399.0&gt;--&lt;449.0,228.0&gt;&gt; -&gt; L&lt;&lt;449.0,228.0&gt;--&lt;450.0,57.0&gt;&gt;
@@ -1479,7 +1453,13 @@ equal, plus
 
 * plus (U+002B): L&lt;&lt;369.0,270.0&gt;--&lt;369.0,420.0&gt;&gt; -&gt; L&lt;&lt;369.0,420.0&gt;--&lt;370.0,570.0&gt;&gt;
 
-* q (U+0071): L&lt;&lt;390.0,351.0&gt;--&lt;408.0,396.0&gt;&gt; -&gt; L&lt;&lt;408.0,396.0&gt;--&lt;427.0,442.0&gt;&gt; 
+* q (U+0071): L&lt;&lt;390.0,351.0&gt;--&lt;408.0,396.0&gt;&gt; -&gt; L&lt;&lt;408.0,396.0&gt;--&lt;427.0,442.0&gt;&gt;
+
+* registered (U+00AE): L&lt;&lt;433.0,429.0&gt;--&lt;432.0,340.0&gt;&gt; -&gt; L&lt;&lt;432.0,340.0&gt;--&lt;432.0,251.0&gt;&gt;
+
+* yen (U+00A5): L&lt;&lt;331.0,273.0&gt;--&lt;288.0,343.0&gt;&gt; -&gt; L&lt;&lt;288.0,343.0&gt;--&lt;246.0,413.0&gt;&gt;
+
+* yen (U+00A5): L&lt;&lt;418.0,219.0&gt;--&lt;418.0,138.0&gt;&gt; -&gt; L&lt;&lt;418.0,138.0&gt;--&lt;419.0,57.0&gt;&gt; 
 
 * z (U+007A): L&lt;&lt;384.0,0.0&gt;--&lt;209.0,0.0&gt;&gt; -&gt; L&lt;&lt;209.0,0.0&gt;--&lt;34.0,1.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
@@ -1538,27 +1518,35 @@ equal, plus
 
 * at (U+0040): L&lt;&lt;588.0,334.0&gt;--&lt;589.0,192.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;216.0,497.0&gt;--&lt;217.0,636.0&gt;&gt;
+* bar (U+007C): L&lt;&lt;119.0,251.0&gt;--&lt;120.0,737.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;217.0,-135.0&gt;--&lt;216.0,3.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;215.0,497.0&gt;--&lt;216.0,636.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;283.0,144.0&gt;--&lt;284.0,5.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;216.0,-135.0&gt;--&lt;215.0,3.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;284.0,495.0&gt;--&lt;283.0,357.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;284.0,144.0&gt;--&lt;285.0,5.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;284.0,5.0&gt;--&lt;285.0,-133.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;285.0,495.0&gt;--&lt;284.0,357.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;285.0,634.0&gt;--&lt;284.0,495.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;285.0,5.0&gt;--&lt;286.0,-133.0&gt;&gt;
 
-* braceright (U+007D): L&lt;&lt;216.0,5.0&gt;--&lt;217.0,144.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;286.0,634.0&gt;--&lt;285.0,495.0&gt;&gt;
 
-* braceright (U+007D): L&lt;&lt;217.0,357.0&gt;--&lt;216.0,495.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;214.0,-133.0&gt;--&lt;215.0,5.0&gt;&gt;
 
-* braceright (U+007D): L&lt;&lt;283.0,636.0&gt;--&lt;284.0,497.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;215.0,495.0&gt;--&lt;214.0,634.0&gt;&gt;
 
-* braceright (U+007D): L&lt;&lt;284.0,3.0&gt;--&lt;283.0,-135.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;215.0,5.0&gt;--&lt;216.0,144.0&gt;&gt;
 
-* equal (U+003D): L&lt;&lt;708.0,328.0&gt;--&lt;390.0,327.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;216.0,357.0&gt;--&lt;215.0,495.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;284.0,636.0&gt;--&lt;285.0,497.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;285.0,3.0&gt;--&lt;284.0,-135.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;285.0,497.0&gt;--&lt;286.0,359.0&gt;&gt;
+
+* braceright (U+007D): L&lt;&lt;286.0,142.0&gt;--&lt;285.0,3.0&gt;&gt;
 
 * f (U+0066): L&lt;&lt;178.0,228.0&gt;--&lt;179.0,57.0&gt;&gt;
 
@@ -1570,7 +1558,9 @@ equal, plus
 
 * one (U+0031): L&lt;&lt;295.0,359.0&gt;--&lt;296.0,59.0&gt;&gt;
 
-* plus (U+002B): L&lt;&lt;369.0,420.0&gt;--&lt;370.0,570.0&gt;&gt; 
+* plus (U+002B): L&lt;&lt;369.0,420.0&gt;--&lt;370.0,570.0&gt;&gt;
+
+* trademark (U+2122): L&lt;&lt;402.0,693.0&gt;--&lt;401.0,527.0&gt;&gt; 
 
 * z (U+007A): L&lt;&lt;209.0,0.0&gt;--&lt;34.0,1.0&gt;&gt; [code: found-semi-vertical]
 </code></pre>

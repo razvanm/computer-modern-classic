@@ -7,16 +7,10 @@ Fontbakery version: 0.8.13
 
 * 🔥 **FAIL** Missing required codepoints:
 
-	- 0x2026 (HORIZONTAL ELLIPSIS)
-
-
 	- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
 	- 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
-
-
-	- 0x007C (VERTICAL LINE)
 
 
 	- 0x0308 (COMBINING DIAERESIS)
@@ -538,9 +532,6 @@ Fontbakery version: 0.8.13
 	- 0x00BA (MASCULINE ORDINAL INDICATOR)
 
 
-	- 0x005F (LOW LINE)
-
-
 	- 0x201A (SINGLE LOW-9 QUOTATION MARK)
 
 
@@ -551,24 +542,6 @@ Fontbakery version: 0.8.13
 
 
 	- 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
-
-
-	- 0x00A9 (COPYRIGHT SIGN)
-
-
-	- 0x00AE (REGISTERED SIGN)
-
-
-	- 0x2122 (TRADE MARK SIGN)
-
-
-	- 0x00A2 (CENT SIGN)
-
-
-	- 0x20AC (EURO SIGN)
-
-
-	- 0x00A5 (YEN SIGN)
 
 
 	- 0x0307 (COMBINING DOT ABOVE)
@@ -632,20 +605,24 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
+	- Glyph name: uni2031	Contours detected: 8	Expected: 9
+
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
-	- Glyph name: fi	Contours detected: 1	Expected: 3 
+	- Glyph name: fi	Contours detected: 1	Expected: 3
 
-	- Glyph name: percent	Contours detected: 4	Expected: 5
+	- Glyph name: percent	Contours detected: 4	Expected: 5 
+
+	- Glyph name: uni2031	Contours detected: 8	Expected: 9
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The most common width is 778 among a set of 5 math glyphs.
+* ⚠ **WARN** The most common width is 766 among a set of 7 math glyphs.
 The following math glyphs have a different width, though:
 
 Width = 767:
-equal, plus
+plus
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
 
@@ -670,11 +647,11 @@ equal, plus
 
 	* at (U+0040): L<<661.0,78.0>--<681.0,79.0>> -> L<<681.0,79.0>--<701.0,79.0>>
 
-	* braceleft (U+007B): L<<283.0,144.0>--<284.0,5.0>> -> L<<284.0,5.0>--<285.0,-133.0>>
+	* euro (U+20AC): L<<149.0,372.0>--<169.0,401.0>> -> L<<169.0,401.0>--<189.0,431.0>>
 
-	* braceleft (U+007B): L<<285.0,634.0>--<284.0,495.0>> -> L<<284.0,495.0>--<283.0,357.0>>
+	* euro (U+20AC): L<<247.0,371.0>--<198.0,371.0>> -> L<<198.0,371.0>--<149.0,372.0>>
 
-	* dollar (U+0024): L<<266.0,750.0>--<266.0,727.0>> -> L<<266.0,727.0>--<267.0,705.0>>
+	* euro (U+20AC): L<<339.0,432.0>--<573.0,431.0>> -> L<<573.0,431.0>--<807.0,431.0>>
 
 	* ffi (U+FB03): L<<590.0,432.0>--<726.0,431.0>> -> L<<726.0,431.0>--<861.0,431.0>>
 
@@ -682,24 +659,20 @@ equal, plus
 
 	* germandbls (U+00DF): L<<133.0,431.0>--<176.0,431.0>> -> L<<176.0,431.0>--<218.0,432.0>>
 
-	* numbersign (U+0023): L<<285.0,133.0>--<207.0,133.0>> -> L<<207.0,133.0>--<130.0,134.0>> 
+	* numbersign (U+0023): L<<285.0,133.0>--<207.0,133.0>> -> L<<207.0,133.0>--<130.0,134.0>>
 
-	* numbersign (U+0023): L<<658.0,368.0>--<736.0,367.0>> -> L<<736.0,367.0>--<814.0,367.0>> [code: found-colinear-vectors]
+	* numbersign (U+0023): L<<658.0,368.0>--<736.0,367.0>> -> L<<736.0,367.0>--<814.0,367.0>> 
+
+	* yen (U+00A5): L<<393.0,242.0>--<396.0,258.0>> -> L<<396.0,258.0>--<400.0,274.0>> [code: found-colinear-vectors]
 </div></details><br></div></details><details><summary><b>[8] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
 
-	- 0x2026 (HORIZONTAL ELLIPSIS)
-
-
 	- 0x00AB (LEFT-POINTING DOUBLE ANGLE QUOTATION MARK)
 
 
 	- 0x00BB (RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK)
-
-
-	- 0x007C (VERTICAL LINE)
 
 
 	- 0x0308 (COMBINING DIAERESIS)
@@ -1221,9 +1194,6 @@ equal, plus
 	- 0x00BA (MASCULINE ORDINAL INDICATOR)
 
 
-	- 0x005F (LOW LINE)
-
-
 	- 0x201A (SINGLE LOW-9 QUOTATION MARK)
 
 
@@ -1234,24 +1204,6 @@ equal, plus
 
 
 	- 0x203A (SINGLE RIGHT-POINTING ANGLE QUOTATION MARK)
-
-
-	- 0x00A9 (COPYRIGHT SIGN)
-
-
-	- 0x00AE (REGISTERED SIGN)
-
-
-	- 0x2122 (TRADE MARK SIGN)
-
-
-	- 0x00A2 (CENT SIGN)
-
-
-	- 0x20AC (EURO SIGN)
-
-
-	- 0x00A5 (YEN SIGN)
 
 
 	- 0x0307 (COMBINING DOT ABOVE)
@@ -1315,11 +1267,15 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
+	- Glyph name: uni2031	Contours detected: 8	Expected: 9
+
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
-	- Glyph name: fi	Contours detected: 1	Expected: 3 
+	- Glyph name: fi	Contours detected: 1	Expected: 3
 
-	- Glyph name: percent	Contours detected: 4	Expected: 5
+	- Glyph name: percent	Contours detected: 4	Expected: 5 
+
+	- Glyph name: uni2031	Contours detected: 8	Expected: 9
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
 
@@ -1368,9 +1324,19 @@ The following glyphs do not have the recommended number of contours:
 
 	* at (U+0040): L<<588.0,476.0>--<588.0,334.0>> -> L<<588.0,334.0>--<589.0,192.0>>
 
-	* braceleft (U+007B): L<<283.0,144.0>--<284.0,5.0>> -> L<<284.0,5.0>--<285.0,-133.0>>
+	* bar (U+007C): L<<119.0,-235.0>--<119.0,251.0>> -> L<<119.0,251.0>--<120.0,737.0>>
 
-	* braceleft (U+007B): L<<285.0,634.0>--<284.0,495.0>> -> L<<284.0,495.0>--<283.0,357.0>>
+	* braceleft (U+007B): L<<284.0,144.0>--<285.0,5.0>> -> L<<285.0,5.0>--<286.0,-133.0>>
+
+	* braceleft (U+007B): L<<286.0,634.0>--<285.0,495.0>> -> L<<285.0,495.0>--<284.0,357.0>>
+
+	* braceright (U+007D): L<<214.0,-133.0>--<215.0,5.0>> -> L<<215.0,5.0>--<216.0,144.0>>
+
+	* braceright (U+007D): L<<216.0,357.0>--<215.0,495.0>> -> L<<215.0,495.0>--<214.0,634.0>>
+
+	* braceright (U+007D): L<<284.0,636.0>--<285.0,497.0>> -> L<<285.0,497.0>--<286.0,359.0>>
+
+	* braceright (U+007D): L<<286.0,142.0>--<285.0,3.0>> -> L<<285.0,3.0>--<284.0,-135.0>>
 
 	* circumflex (U+005E): L<<116.0,559.0>--<183.0,626.0>> -> L<<183.0,626.0>--<250.0,694.0>>
 
@@ -1386,6 +1352,14 @@ The following glyphs do not have the recommended number of contours:
 
 	* dollar (U+0024): L<<266.0,750.0>--<266.0,727.0>> -> L<<266.0,727.0>--<267.0,705.0>>
 
+	* euro (U+20AC): L<<156.0,371.0>--<106.0,371.0>> -> L<<106.0,371.0>--<56.0,372.0>>
+
+	* euro (U+20AC): L<<167.0,252.0>--<111.0,252.0>> -> L<<111.0,252.0>--<56.0,253.0>>
+
+	* euro (U+20AC): L<<56.0,253.0>--<68.0,282.0>> -> L<<68.0,282.0>--<81.0,312.0>>
+
+	* euro (U+20AC): L<<56.0,372.0>--<68.0,401.0>> -> L<<68.0,401.0>--<81.0,431.0>>
+
 	* f (U+0066): L<<178.0,399.0>--<178.0,228.0>> -> L<<178.0,228.0>--<179.0,57.0>>
 
 	* ff (U+FB00): L<<449.0,399.0>--<449.0,228.0>> -> L<<449.0,228.0>--<450.0,57.0>>
@@ -1400,7 +1374,13 @@ The following glyphs do not have the recommended number of contours:
 
 	* plus (U+002B): L<<369.0,270.0>--<369.0,420.0>> -> L<<369.0,420.0>--<370.0,570.0>>
 
-	* q (U+0071): L<<390.0,351.0>--<408.0,396.0>> -> L<<408.0,396.0>--<427.0,442.0>> 
+	* q (U+0071): L<<390.0,351.0>--<408.0,396.0>> -> L<<408.0,396.0>--<427.0,442.0>>
+
+	* registered (U+00AE): L<<433.0,429.0>--<432.0,340.0>> -> L<<432.0,340.0>--<432.0,251.0>>
+
+	* yen (U+00A5): L<<331.0,273.0>--<288.0,343.0>> -> L<<288.0,343.0>--<246.0,413.0>>
+
+	* yen (U+00A5): L<<418.0,219.0>--<418.0,138.0>> -> L<<418.0,138.0>--<419.0,57.0>> 
 
 	* z (U+007A): L<<384.0,0.0>--<209.0,0.0>> -> L<<209.0,0.0>--<34.0,1.0>> [code: found-colinear-vectors]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
@@ -1458,27 +1438,35 @@ The following glyphs do not have the recommended number of contours:
 
 	* at (U+0040): L<<588.0,334.0>--<589.0,192.0>>
 
-	* braceleft (U+007B): L<<216.0,497.0>--<217.0,636.0>>
+	* bar (U+007C): L<<119.0,251.0>--<120.0,737.0>>
 
-	* braceleft (U+007B): L<<217.0,-135.0>--<216.0,3.0>>
+	* braceleft (U+007B): L<<215.0,497.0>--<216.0,636.0>>
 
-	* braceleft (U+007B): L<<283.0,144.0>--<284.0,5.0>>
+	* braceleft (U+007B): L<<216.0,-135.0>--<215.0,3.0>>
 
-	* braceleft (U+007B): L<<284.0,495.0>--<283.0,357.0>>
+	* braceleft (U+007B): L<<284.0,144.0>--<285.0,5.0>>
 
-	* braceleft (U+007B): L<<284.0,5.0>--<285.0,-133.0>>
+	* braceleft (U+007B): L<<285.0,495.0>--<284.0,357.0>>
 
-	* braceleft (U+007B): L<<285.0,634.0>--<284.0,495.0>>
+	* braceleft (U+007B): L<<285.0,5.0>--<286.0,-133.0>>
 
-	* braceright (U+007D): L<<216.0,5.0>--<217.0,144.0>>
+	* braceleft (U+007B): L<<286.0,634.0>--<285.0,495.0>>
 
-	* braceright (U+007D): L<<217.0,357.0>--<216.0,495.0>>
+	* braceright (U+007D): L<<214.0,-133.0>--<215.0,5.0>>
 
-	* braceright (U+007D): L<<283.0,636.0>--<284.0,497.0>>
+	* braceright (U+007D): L<<215.0,495.0>--<214.0,634.0>>
 
-	* braceright (U+007D): L<<284.0,3.0>--<283.0,-135.0>>
+	* braceright (U+007D): L<<215.0,5.0>--<216.0,144.0>>
 
-	* equal (U+003D): L<<708.0,328.0>--<390.0,327.0>>
+	* braceright (U+007D): L<<216.0,357.0>--<215.0,495.0>>
+
+	* braceright (U+007D): L<<284.0,636.0>--<285.0,497.0>>
+
+	* braceright (U+007D): L<<285.0,3.0>--<284.0,-135.0>>
+
+	* braceright (U+007D): L<<285.0,497.0>--<286.0,359.0>>
+
+	* braceright (U+007D): L<<286.0,142.0>--<285.0,3.0>>
 
 	* f (U+0066): L<<178.0,228.0>--<179.0,57.0>>
 
@@ -1490,7 +1478,9 @@ The following glyphs do not have the recommended number of contours:
 
 	* one (U+0031): L<<295.0,359.0>--<296.0,59.0>>
 
-	* plus (U+002B): L<<369.0,420.0>--<370.0,570.0>> 
+	* plus (U+002B): L<<369.0,420.0>--<370.0,570.0>>
+
+	* trademark (U+2122): L<<402.0,693.0>--<401.0,527.0>> 
 
 	* z (U+007A): L<<209.0,0.0>--<34.0,1.0>> [code: found-semi-vertical]
 </div></details><br></div></details>
