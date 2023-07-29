@@ -35,7 +35,7 @@ f.info.openTypeNameLicenseURL = 'https://scripts.sil.org/OFL'
 
 # Fix for FontBakery:com.google.fonts/check/family/win_ascent_and_descent.
 f.info.openTypeOS2WinAscent = 872
-f.info.openTypeOS2WinDescent = 272
+f.info.openTypeOS2WinDescent = 273
 
 # Fix for com.FontBakery:com.google.fonts/check/vertical_metrics.
 # Reference: https://googlefonts.github.io/gf-guide/metrics.html
