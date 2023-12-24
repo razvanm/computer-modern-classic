@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>euroit</title>
+
+    <style>
+      thead tr th {
+          font-weight: normal;
+      }
+
+      .border-collapse { border-collapse: collapse; }
+
+      .italic { font-style: italic;  }
+      .not-italic { font-style: normal; }
+
+      .font-bold { font-weight: bold; }
+      .font-normal { font-weight: normal; }
+
+      .border-solid { border-style: solid; }
+      .border { border-width: 1px; }
+      .border-y	{
+          border-top-width: 1px;
+          border-right-width: 0;
+          border-bottom-width: 1px;
+          border-left-width: 0;
+      }
+      .border-x	{
+          border-top-width: 0;
+          border-right-width: 1px;
+          border-bottom-width: 0;
+          border-left-width: 1px;
+      }
+      .border-black { border-color: rgb(0 0 0); }
+
+      .w-100 { width: 100px; }
+
+      .text-center { text-align: center; }
+
+      .px-1 {
+          padding-left: 0.25rem;
+          padding-right: 0.25rem;
+       }
+
+      .py-1 {
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+       }
+
+      .font-mono {
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <table class='border-collapse'>
+      <thead><tr></tr></thead>
+      <tbody></tbody>
+      <tfoot><tr></tr></tfoot>
+    </table>
+
+    <script>
+      const theadRow = document.querySelector('table thead tr');
+      theadRow.insertCell();
+      for (let i = 0; i < 8; i++) {
+          const cell = theadRow.insertCell();
+          cell.innerText = `'${i.toString(8)}`;
+          cell.className = 'italic border-x border-solid border-black w-100 text-center py-1';
+      }
+      theadRow.insertCell();
+
+      const tbody = document.querySelector('table tbody');
+      for (let i = 0; i < 32; i++) {
+          const row = tbody.insertRow();
+          const cellOctal = row.insertCell();
+          cellOctal.innerText = `'${i.toString(8).padStart(2, 0)}x`;
+          cellOctal.className = 'italic border-y border-solid border-black text-center px-1';
+          for (let j = 0; j < 8; j++) {
+              const cell = row.insertCell();
+              const img = new Image();
+              const index = i * 8 + j;
+              img.src = `euroit/char-${index.toString(16).padStart(2, 0)}.svg`;
+              img.onload = () => {
+                  img.width = img.naturalWidth/40;
+                  cell.appendChild(img);
+              };
+              cell.className = 'border border-solid border-black text-center';
+          }
+          if (i % 2 === 0) {
+              const cellHex = row.insertCell();
+              iHex = i/2;
+              cellHex.innerText = `"${iHex.toString(16).toUpperCase()}x`;
+              cellHex.rowSpan = 2;
+              cellHex.className = 'font-bold font-mono border-y border-solid border-black text-center px-1';
+          }
+      }
+
+      const tfootRow = document.querySelector('table tfoot tr');
+      tfootRow.insertCell();
+      for (let i = 8; i < 16; i++) {
+          const cell = tfootRow.insertCell();
+          cell.innerText = `"${i.toString(16).toUpperCase()}`;
+          cell.className = 'font-bold font-mono border-x border-solid border-black text-center py-1';
+      }
+      tfootRow.insertCell();
+    </script>
+  </body>
+</html>
