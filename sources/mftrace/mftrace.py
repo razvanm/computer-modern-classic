@@ -962,9 +962,8 @@ Copyright (c) 2005--2006 by
     p.description = _ ("Generate Type1 or TrueType font from Metafont source.")
 
     p.add_option ('-k', '--keep',
-                  action="store_true",
-                  dest="keep_temp_dir",
-                  help=_ ("Keep all output in directory %s.dir") % program_name)
+                  dest='keep_temp_dir',
+                  help=_ ("Keep the temporary data in the indicated directory"))
     p.add_option ('--magnification',
                   dest="magnification",
                   metavar="MAG",
@@ -1347,7 +1346,7 @@ def do_file (filename):
     if options.keep_temp_dir:
         def nop():
             pass
-        setup_temp (os.path.join (os.getcwd (), program_name + '.dir'))
+        setup_temp (options.keep_temp_dir)
         temp_dir.clean = nop
     else:
         setup_temp (None)
