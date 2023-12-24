@@ -42,6 +42,14 @@ test-glyph-coverage:
 proof: venv build.stamp
 	. venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $(shell find fonts/ttf -type f) -o out/proof
 
+out/proof-bitmap/Regular: fonts/ttf/ComputerModernClassic-Regular.ttf sources/render-freetype.py
+	mkdir -p $@; ./sources/render-freetype.py -v $< $@
+
+out/proof-bitmap/Italic: fonts/ttf/ComputerModernClassic-Italic.ttf sources/render-freetype.py
+	mkdir -p $@; ./sources/render-freetype.py -v $< $@
+
+proof-bitmap: out/proof-bitmap/Regular out/proof-bitmap/Italic
+
 images: venv build.stamp $(DRAWBOT_OUTPUT)
 	git add documentation/*.png && git commit -m "Rebuild images" documentation/*.png
 
