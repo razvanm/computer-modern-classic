@@ -14,7 +14,7 @@ jobs:
     - name: Install sys tools/deps
       run: |
         sudo apt-get update
-        sudo apt-get install ttfautohint
+        sudo apt-get install ttfautohint texlive-base texlive-fonts-recommended potrace
         sudo snap install yq
     - uses: actions/cache@v3
       with:
@@ -46,6 +46,10 @@ jobs:
       continue-on-error: true
     - name: proof
       run: make proof
+    - name: proof-testfont
+      run: |
+        make -C sources/mftrace gf2pbm
+        make proof-testfont
     - name: setup site
       run: cp scripts/index.html out/index.html
     - name: Deploy

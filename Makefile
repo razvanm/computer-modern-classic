@@ -50,6 +50,11 @@ out/proof-bitmap/Italic: fonts/ttf/ComputerModernClassic-Italic.ttf sources/rend
 
 proof-bitmap: out/proof-bitmap/Regular out/proof-bitmap/Italic
 
+proof-testfont:
+	$(MAKE) -C sources/testfont
+	mkdir -p out/proof-testfont
+	cd sources/testfont && find . -name \*.html \-or -name \*.svg | cpio -pduv ../../out/proof-testfont
+
 images: venv build.stamp $(DRAWBOT_OUTPUT)
 	git add documentation/*.png && git commit -m "Rebuild images" documentation/*.png
 

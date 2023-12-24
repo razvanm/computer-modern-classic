@@ -10,7 +10,7 @@ FONTS = \
 	eurorm \
 	euroit
 
-all: $(addsuffix .gf,$(FONTS))
+all: $(addsuffix .gf,$(FONTS)) index.html
 svg: $(addsuffix _svg,$(FONTS))
 html: index.html
 
