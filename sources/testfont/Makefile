@@ -12,15 +12,19 @@ FONTS = \
 
 all: $(addsuffix .gf,$(FONTS)) index.html
 svg: $(addsuffix _svg,$(FONTS))
+pl: $(addsuffix .pl,$(FONTS))
 html: index.html
 
 %.gf:
 	mf-nowin -interaction=nonstopmode '\mode=ibx; input $(basename $@)'
 	ln -s $(basename $@).9600gf $(basename $@).gf
 
+%.pl: %.tfm
+	tftopl -charcode-format=octal $< $@
+
 char-%.pbm:
 	@mkdir -p $(dir $@)
-	../mftrace/gf2pbm -n $(shell printf '%d' 0x$(patsubst char-%.pbm,%,$(notdir $@))) -o $@ $<
+	../mftrace/gf2pbm -s -b -n $(shell printf '%d' 0x$(patsubst char-%.pbm,%,$(notdir $@))) -o $@ $< > $(basename $@).size
 
 %.png: %.pbm
 	convert $< $@
@@ -50,7 +54,7 @@ index.html: $(addsuffix .html,$(FONTS)) svg
 
 .PHONY: clean
 clean:
-	rm -rf *.log *.html *gf *.tfm *.deps $(FONTS)
+	rm -rf *.log *.html *gf *.tfm $(FONTS)
 
 .PHONY: deps
 deps:
