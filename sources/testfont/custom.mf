@@ -1,0 +1,8 @@
+pixels_per_inch:=4000 + 4000 + 2000;
+blacker:=10;
+fillin:=0;
+o_correction:=1;
+
+proofing:=0;
+fontmaking:=1;
+tracingtitles:=0;

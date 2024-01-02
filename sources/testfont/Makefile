@@ -13,11 +13,13 @@ FONTS = \
 all: $(addsuffix .gf,$(FONTS)) index.html
 svg: $(addsuffix _svg,$(FONTS))
 pl: $(addsuffix .pl,$(FONTS))
+gf: $(addsuffix .gf,$(FONTS))
 html: index.html
 
+# Reference for \smode: https://texfaq.org/FAQ-useMF
 %.gf:
-	mf-nowin -interaction=nonstopmode '\mode=ibx; input $(basename $@)'
-	ln -s $(basename $@).9600gf $(basename $@).gf
+	mf-nowin -interaction=nonstopmode '\smode="custom"; input $(basename $@)'
+	ln -s $(basename $@).10000gf $(basename $@).gf
 
 %.pl: %.tfm
 	tftopl -charcode-format=octal $< $@

@@ -1,6 +1,6 @@
 import fontTools.agl
 
-# These comes from /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/ec.enc.
+# These come from /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/ec.enc.
 # Reference: https://github.com/charlesmchen/typefacet/blob/master/data/Adobe%20Glyph%20List/aglfn13.txt
 GLYPHS = ['grave', 'acute', 'circumflex', 'tilde', 'dieresis', 'hungarumlaut', 'ring', 'caron', 'breve', 'macron', 'dotaccent', 'cedilla', 'ogonek', 'quotesinglbase', 'guilsinglleft', 'guilsinglright', 'quotedblleft', 'quotedblright', 'quotedblbase', 'guillemotleft', 'guillemotright', 'endash', 'emdash', 'cwm', 'perthousandzero', 'dotlessi', 'dotlessj', 'ff', 'fi', 'fl', 'ffi', 'ffl', 'visiblespace', 'exclam', 'quotedbl', 'numbersign', 'dollar', 'percent', 'ampersand', 'quoteright', 'parenleft', 'parenright', 'asterisk', 'plus', 'comma', 'hyphen', 'period', 'slash', 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'colon', 'semicolon', 'less', 'equal', 'greater', 'question', 'at', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'bracketleft', 'backslash', 'bracketright', 'asciicircum', 'underscore', 'quoteleft', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'braceleft', 'bar', 'braceright', 'asciitilde', 'hyphen', 'Abreve', 'Aogonek', 'Cacute', 'Ccaron', 'Dcaron', 'Ecaron', 'Eogonek', 'Gbreve', 'Lacute', 'Lcaron', 'Lslash', 'Nacute', 'Ncaron', 'Eng', 'Ohungarumlaut', 'Racute', 'Rcaron', 'Sacute', 'Scaron', 'Scedilla', 'Tcaron', 'Tcedilla', 'Uhungarumlaut', 'Uring', 'Ydieresis', 'Zacute', 'Zcaron', 'Zdotaccent', 'IJ', 'Idotaccent', 'dcroat', 'section', 'abreve', 'aogonek', 'cacute', 'ccaron', 'dcaron', 'ecaron', 'eogonek', 'gbreve', 'lacute', 'lcaron', 'lslash', 'nacute', 'ncaron', 'eng', 'ohungarumlaut', 'racute', 'rcaron', 'sacute', 'scaron', 'scedilla', 'tcaron', 'tcedilla', 'uhungarumlaut', 'uring', 'ydieresis', 'zacute', 'zcaron', 'zdotaccent', 'ij', 'exclamdown', 'questiondown', 'sterling', 'Agrave', 'Aacute', 'Acircumflex', 'Atilde', 'Adieresis', 'Aring', 'AE', 'Ccedilla', 'Egrave', 'Eacute', 'Ecircumflex', 'Edieresis', 'Igrave', 'Iacute', 'Icircumflex', 'Idieresis', 'Eth', 'Ntilde', 'Ograve', 'Oacute', 'Ocircumflex', 'Otilde', 'Odieresis', 'OE', 'Oslash', 'Ugrave', 'Uacute', 'Ucircumflex', 'Udieresis', 'Yacute', 'Thorn', 'Germandbls', 'agrave', 'aacute', 'acircumflex', 'atilde', 'adieresis', 'aring', 'ae', 'ccedilla', 'egrave', 'eacute', 'ecircumflex', 'edieresis', 'igrave', 'iacute', 'icircumflex', 'idieresis', 'eth', 'ntilde', 'ograve', 'oacute', 'ocircumflex', 'otilde', 'odieresis', 'oe', 'oslash', 'ugrave', 'uacute', 'ucircumflex', 'udieresis', 'yacute', 'thorn', 'germandbls']
 
@@ -22,14 +22,24 @@ AGL_MISSING = {
 # This character doesn't have a unicode counterpart.
 NO_UNICODE = set(['perthousandzero'])
 
-print('NAME_UNICODE = [', end='')
+print('EC_NAME_UNICODE = [', end='')
 for i in range(len(GLYPHS)):
-    uni = 0
-    if GLYPHS[i] in NO_UNICODE:
+    name = GLYPHS[i]
+    uni = -1
+    if name in NO_UNICODE:
         pass
-    elif GLYPHS[i] in AGL_MISSING:
-        uni = AGL_MISSING[GLYPHS[i]]
+    elif name in AGL_MISSING:
+        uni = AGL_MISSING[name]
     else:
-        uni = fontTools.agl.AGL2UV[GLYPHS[i]]
-    print("('%s', %d)," % (GLYPHS[i], uni), end='')
+        uni = fontTools.agl.AGL2UV[name]
+    if i == 0x7F:
+        # This is a special "hyphen char" that was introduced to
+        # distinguish explicit hypenation from a dash. We need to
+        # rename because it's causing issues to the fontmake tool.
+        #
+        # Reference: https://www.tug.org/TUGboat/Articles/tb11-4/tb30ferguson.pdf
+        name = "hyphen.char"
+        uni = -1
+    uni = '0x%X' % (uni) if uni != -1 else '-1'
+    print("('%s', %s)," % (name, uni), end='')
 print(']')

@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <glyph name="dotaccent" format="2">
-  <advance width="278"/>
+  <advance width="277"/>
   <unicode hex="02D9"/>
   <outline>
     <contour>
-      <point x="85" y="616" type="curve" smooth="yes"/>
-      <point x="85" y="659"/>
-      <point x="140" y="689"/>
-      <point x="176" y="653" type="curve" smooth="yes"/>
-      <point x="187" y="643"/>
-      <point x="192" y="630"/>
-      <point x="192" y="616" type="curve" smooth="yes"/>
-      <point x="192" y="546"/>
-      <point x="85" y="546"/>
+      <point x="140.535" y="667.3" type="curve" smooth="yes"/>
+      <point x="169.509" y="673.5"/>
+      <point x="199.181" y="655.018"/>
+      <point x="206.706" y="626.084" type="curve" smooth="yes"/>
+      <point x="208.717" y="618.353"/>
+      <point x="208.715" y="605.925"/>
+      <point x="206.703" y="598.193" type="curve" smooth="yes"/>
+      <point x="200.314" y="573.646"/>
+      <point x="177.312" y="555.78"/>
+      <point x="152.096" y="555.78" type="curve" smooth="yes"/>
+      <point x="126.879" y="555.78"/>
+      <point x="103.876" y="573.646"/>
+      <point x="97.4873" y="598.193" type="curve" smooth="yes"/>
+      <point x="95.4756" y="605.925"/>
+      <point x="95.4727" y="618.353"/>
+      <point x="97.4814" y="626.084" type="curve" smooth="yes"/>
+      <point x="102.775" y="646.459"/>
+      <point x="119.942" y="662.894"/>
     </contour>
   </outline>
 </glyph>
