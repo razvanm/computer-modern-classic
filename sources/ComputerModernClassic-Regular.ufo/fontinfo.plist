@@ -15,9 +15,9 @@
     <key>italicAngle</key>
     <real>0.0</real>
     <key>note</key>
-    <string>2024-1-1: Created with FontForge (http://fontforge.org)</string>
+    <string>2024-1-2: Created with FontForge (http://fontforge.org)</string>
     <key>openTypeHeadCreated</key>
-    <string>2024/01/02 05:39:24</string>
+    <string>2024/01/03 05:34:13</string>
     <key>openTypeHheaAscender</key>
     <integer>900</integer>
     <key>openTypeHheaDescender</key>
@@ -47,7 +47,7 @@
     <key>openTypeOS2WinAscent</key>
     <integer>931</integer>
     <key>openTypeOS2WinDescent</key>
-    <integer>274</integer>
+    <integer>288</integer>
     <key>postscriptBlueValues</key>
     <array/>
     <key>postscriptFamilyBlues</key>

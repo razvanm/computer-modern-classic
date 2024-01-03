@@ -4,6 +4,10 @@ import defcon
 import sys
 
 f = defcon.Font(sys.argv[1])
+italic = 'Italic' in sys.argv[1]
+
+# For for FontBakery:com.google.fonts/check/italic_angle.
+f.info.italicAngle = -14.0 if italic else 0
 
 # Fix for FontBakery:com.google.fonts/check/font_copyright.
 f.info.copyright = 'Copyright 2023 The Computer Modern Classic Project Authors (https://github.com/razvanm/computer-modern-classic)'
@@ -15,7 +19,7 @@ f.info.openTypeOS2VendorID = 'GOOG'
 f.info.familyName = 'Computer Modern Classic'
 f.info.postscriptFullName = 'Computer Modern Classic'
 f.info.styleMapFamilyName = 'Computer Modern Classic'
-f.info.styleName = 'Regular' if f.info.italicAngle == 0 else 'Italic'
+f.info.styleName = 'Italic' if italic else 'Regular'
 # Stripping the ".ufo" ending gives us the font name.
 f.info.postscriptFontName = sys.argv[1].split('.')[0]
 
@@ -23,7 +27,7 @@ f.info.postscriptFontName = sys.argv[1].split('.')[0]
 f.info.openTypeOS2Type = []
 
 # Fix for FontBakery:com.google.fonts/check/fsselection.
-f.info.styleMapStyleName = 'regular' if f.info.italicAngle == 0 else 'italic'
+f.info.styleMapStyleName = 'italic' if italic else 'regular'
 
 # Fix for FontBakery:com.google.fonts/check/os2/use_typo_metrics.
 # Reference: https://learn.microsoft.com/en-us/typography/opentype/spec/os2#fsselection
@@ -35,7 +39,7 @@ f.info.openTypeNameLicenseURL = 'https://scripts.sil.org/OFL'
 
 # Fix for FontBakery:com.google.fonts/check/family/win_ascent_and_descent.
 f.info.openTypeOS2WinAscent = 931
-f.info.openTypeOS2WinDescent = 274
+f.info.openTypeOS2WinDescent = 288
 
 # Fix for com.FontBakery:com.google.fonts/check/vertical_metrics.
 # Reference: https://googlefonts.github.io/gf-guide/metrics.html
