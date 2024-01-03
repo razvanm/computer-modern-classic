@@ -108,11 +108,7 @@ fontbakery version: 0.10.8
 | nb_Latn (Norwegian Bokmål) | No exemplar glyphs were defined for language Norwegian Bokmål |
 
  [code: warning-language-shaping]
-</div></details><br></div></details><details><summary><b>[1] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check that OS/2.fsSelection bold & italic settings are unique for each NameID1 (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.adobe.fonts/check/family/bold_italic_unique_for_nameid1">com.adobe.fonts/check/family/bold_italic_unique_for_nameid1</a>)</summary><div>
-
-
-* 🔥 **FAIL** Family 'Computer Modern Classic' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
-</div></details><br></div></details><details><summary><b>[13] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -293,10 +289,6 @@ fontbakery version: 0.10.8
 
 	- 0x1EF3 (LATIN SMALL LETTER Y WITH GRAVE)
  [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 288, but got 274 instead [code: descent]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -331,11 +323,11 @@ fontbakery version: 0.10.8
  * U+2126 OHM SIGN: not included in any glyphset definition
  * U+2127 INVERTED OHM SIGN: not included in any glyphset definition
  * U+212E ESTIMATED SYMBOL: not included in any glyphset definition
- * U+2190 LEFTWARDS ARROW: try adding one of: symbols, math
- * U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math
+ * U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+ * U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
  * U+2217 ASTERISK OPERATOR: try adding math
  * U+221A SQUARE ROOT: try adding math
- * U+22C6 STAR OPERATOR: try adding one of: symbols, math
+ * U+22C6 STAR OPERATOR: try adding one of: math, symbols
  * U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols
  * U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols
  * U+2422 BLANK SYMBOL: try adding symbols
@@ -669,11 +661,7 @@ logicalnot
 	* zdotaccent (U+017C): L<<210.0,0.0>--<35.0,1.0>>
 
 	* zdotaccent (U+017C): L<<223.0,431.0>--<392.0,430.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[20] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking file is named canonically. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/canonical_filename">com.google.fonts/check/canonical_filename</a>)</summary><div>
-
-
-* 🔥 **FAIL** Expected "ComputerModernClassic-Regular.ttf. Got ComputerModernClassic-Italic.ttf. [code: bad-filename]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -854,39 +842,6 @@ logicalnot
 
 	- 0x1EF3 (LATIN SMALL LETTER Y WITH GRAVE)
  [code: missing-codepoints]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font names are incorrect:
-
-| nameID | current | expected |
-| :--- | :--- | :--- |
-| Family Name | Computer Modern Classic | Computer Modern Classic |
-| Subfamily Name | Regular | Regular |
-| Full Name | Computer Modern Classic Regular | Computer Modern Classic Regular |
-| Postscript Name | **ComputerModernClassic-Italic** | **ComputerModernClassic-Regular** | [code: bad-names]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.usWinDescent value should be equal or greater than 288, but got 274 instead [code: descent]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking head.macStyle value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/head.html#com.google.fonts/check/mac_style">com.google.fonts/check/mac_style</a>)</summary><div>
-
-
-* 🔥 **FAIL** head macStyle ITALIC bit should be set. [code: bad-ITALIC]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 fsSelection value. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/os2.html#com.google.fonts/check/fsselection">com.google.fonts/check/fsselection</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2 fsSelection REGULAR bit should be unset. [code: bad-REGULAR]
-* 🔥 **FAIL** OS/2 fsSelection ITALIC bit should be set. [code: bad-ITALIC]
-</div></details><details><summary>🔥 <b>FAIL:</b> Checking post.italicAngle value. (derived from com.google.fonts/check/italic_angle) (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/post.html#com.google.fonts/check/italic_angle">com.google.fonts/check/italic_angle</a>)</summary><div>
-
-
-* 🔥 **FAIL** Font is italic, so post.italicAngle should be non-zero. [code: zero-italic]
-</div></details><details><summary>🔥 <b>FAIL:</b> Check name table IDs 1, 2, 16, 17 to conform to Italic style. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/name.html#com.google.fonts/check/name/italic_names">com.google.fonts/check/name/italic_names</a>)</summary><div>
-
-
-* 🔥 **FAIL** Name ID 2 (Subfamily Name) does not conform to specs. Only R/I/B/BI are allowed.
-Got: 'Regular'. [code: bad-subfamilyname]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
@@ -921,11 +876,11 @@ Got: 'Regular'. [code: bad-subfamilyname]
  * U+2126 OHM SIGN: not included in any glyphset definition
  * U+2127 INVERTED OHM SIGN: not included in any glyphset definition
  * U+212E ESTIMATED SYMBOL: not included in any glyphset definition
- * U+2190 LEFTWARDS ARROW: try adding one of: symbols, math
- * U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math
+ * U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+ * U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
  * U+2217 ASTERISK OPERATOR: try adding math
  * U+221A SQUARE ROOT: try adding math
- * U+22C6 STAR OPERATOR: try adding one of: symbols, math
+ * U+22C6 STAR OPERATOR: try adding one of: math, symbols
  * U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols
  * U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols
  * U+2422 BLANK SYMBOL: try adding symbols
@@ -1201,42 +1156,14 @@ logicalnot
 	* yen (U+00A5): L<<355.0,406.0>--<277.0,406.0>> -> L<<277.0,406.0>--<200.0,407.0>>
 
 	* yen (U+00A5): L<<703.0,212.0>--<585.0,212.0>> -> L<<585.0,212.0>--<466.0,212.0>> [code: found-colinear-vectors]
-</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
-
-
-* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
-
-	* L (U+004C): L<<296.0,0.0>--<64.0,1.0>>
-
-	* Lacute (U+0139): L<<296.0,0.0>--<64.0,1.0>>
-
-	* Lcaron (U+013D): L<<296.0,0.0>--<64.0,1.0>>
-
-	* Lslash (U+0141): L<<296.0,0.0>--<64.0,1.0>>
-
-	* Z (U+005A): L<<301.0,0.0>--<84.0,1.0>>
-
-	* Zacute (U+0179): L<<301.0,0.0>--<84.0,1.0>>
-
-	* Zcaron (U+017D): L<<301.0,0.0>--<84.0,1.0>>
-
-	* Zdotaccent (U+017B): L<<301.0,0.0>--<84.0,1.0>>
-
-	* equal (U+003D): L<<419.0,138.0>--<125.0,139.0>>
-
-	* ordfeminine (U+00AA): L<<229.0,335.0>--<399.0,334.0>>
-
-	* ordmasculine (U+00BA): L<<216.0,335.0>--<373.0,334.0>>
-
-	* uni2117 (U+2117): L<<370.0,478.0>--<545.0,477.0>> [code: found-semi-vertical]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | ☠ FATAL | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 13 | 23 | 245 | 13 | 198 |
-| 0% | 0% | 3% | 5% | 50% | 3% | 40% |
+| 0 | 0 | 4 | 22 | 246 | 13 | 207 |
+| 0% | 0% | 1% | 4% | 50% | 3% | 42% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
