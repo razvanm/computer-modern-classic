@@ -542,7 +542,7 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh</li>
+<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
@@ -578,7 +578,7 @@ definitions.</p>
 <li>U+2423 OPEN BOX: try adding symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
-<li>U+266A EIGHTH NOTE: try adding one of: symbols, music</li>
+<li>U+266A EIGHTH NOTE: try adding one of: music, symbols</li>
 <li>U+26AD MARRIAGE SYMBOL: try adding symbols</li>
 <li>U+26AE DIVORCE SYMBOL: try adding symbols</li>
 <li>U+271D LATIN CROSS: try adding one of: emoji, symbols</li>
@@ -601,7 +601,7 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh</li>
+<li>U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal</li>
 <li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
 <li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
@@ -637,7 +637,7 @@ definitions.</p>
 <li>U+2423 OPEN BOX: try adding symbols</li>
 <li>U+25CB WHITE CIRCLE: try adding symbols</li>
 <li>U+25E6 WHITE BULLET: try adding symbols</li>
-<li>U+266A EIGHTH NOTE: try adding one of: symbols, music</li>
+<li>U+266A EIGHTH NOTE: try adding one of: music, symbols</li>
 <li>U+26AD MARRIAGE SYMBOL: try adding symbols</li>
 <li>U+26AE DIVORCE SYMBOL: try adding symbols</li>
 <li>U+271D LATIN CROSS: try adding one of: emoji, symbols</li>
@@ -1177,6 +1177,8 @@ definitions.</p>
 <p>The following glyphs do not have the recommended number of contours:</p>
 <pre><code>- Glyph name: Q	Contours detected: 3	Expected: 2
 
+- Glyph name: threesuperior	Contours detected: 2	Expected: 1
+
 - Glyph name: onesuperior	Contours detected: 2	Expected: 1
 
 - Glyph name: Germandbls	Contours detected: 2	Expected: 1
@@ -1223,6 +1225,8 @@ definitions.</p>
 
 - Glyph name: onehalf	Contours detected: 4	Expected: 3
 
+- Glyph name: threequarters	Contours detected: 5	Expected: 3 or 4
+
 - Glyph name: Germandbls	Contours detected: 2	Expected: 1
 
 - Glyph name: daggerdbl	Contours detected: 2	Expected: 1 or 3
@@ -1235,7 +1239,9 @@ definitions.</p>
 
 - Glyph name: uni26AE	Contours detected: 5	Expected: 3
 
-- Glyph name: uni2E18	Contours detected: 4	Expected: 2
+- Glyph name: uni2E18	Contours detected: 3	Expected: 2
+
+- Glyph name: fl	Contours detected: 3	Expected: 1 or 2
 
 - Glyph name: Q	Contours detected: 3	Expected: 2
 
@@ -1245,17 +1251,21 @@ definitions.</p>
 
 - Glyph name: fi	Contours detected: 1	Expected: 3
 
+- Glyph name: fl	Contours detected: 3	Expected: 2
+
 - Glyph name: lira	Contours detected: 2	Expected: 1
 
 - Glyph name: onehalf	Contours detected: 4	Expected: 3
 
 - Glyph name: onequarter	Contours detected: 5	Expected: 3 or 4
 
+- Glyph name: threequarters	Contours detected: 5	Expected: 3 or 4
+
 - Glyph name: uni203D	Contours detected: 4	Expected: 2
 
 - Glyph name: uni26AE	Contours detected: 5	Expected: 3
 
-- Glyph name: uni2E18	Contours detected: 4	Expected: 2
+- Glyph name: uni2E18	Contours detected: 3	Expected: 2
 </code></pre>
 <p>[code: contour-count]</p>
 </span></li></ul></div></details>
@@ -1304,7 +1314,23 @@ uni0361 (U+0361) [code: mark-chars]</p>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/outline_colinear_vectors</div>
 
 <details><summary>⚠️ ComputerModernClassic-Italic.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have colinear vectors:</p>
-<pre><code>* B (U+0042): L&lt;&lt;506.0,340.0&gt;--&lt;412.0,340.0&gt;&gt; -&gt; L&lt;&lt;412.0,340.0&gt;--&lt;318.0,341.0&gt;&gt;
+<pre><code>* A (U+0041): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Aacute (U+00C1): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Abreve (U+0102): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Acircumflex (U+00C2): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Adieresis (U+00C4): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Agrave (U+00C0): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Aogonek (U+0104): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Aring (U+00C5): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
+
+* Atilde (U+00C3): L&lt;&lt;506.0,211.0&gt;--&lt;399.0,211.0&gt;&gt; -&gt; L&lt;&lt;399.0,211.0&gt;--&lt;291.0,211.0&gt;&gt;
 
 * Euro (U+20AC): L&lt;&lt;159.0,312.0&gt;--&lt;196.0,312.0&gt;&gt; -&gt; L&lt;&lt;196.0,312.0&gt;--&lt;233.0,312.0&gt;&gt;
 
@@ -1316,140 +1342,76 @@ uni0361 (U+0361) [code: mark-chars]</p>
 
 * Euro (U+20AC): L&lt;&lt;913.0,591.0&gt;--&lt;895.0,564.0&gt;&gt; -&gt; L&lt;&lt;895.0,564.0&gt;--&lt;877.0,538.0&gt;&gt;
 
-* H (U+0048): L&lt;&lt;589.0,336.0&gt;--&lt;455.0,336.0&gt;&gt; -&gt; L&lt;&lt;455.0,336.0&gt;--&lt;320.0,336.0&gt;&gt;
+* Scedilla (U+015E): L&lt;&lt;341.0,-18.0&gt;--&lt;338.0,-30.0&gt;&gt; -&gt; L&lt;&lt;338.0,-30.0&gt;--&lt;335.0,-41.0&gt;&gt;
 
-* a (U+0061): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
+* at (U+0040): L&lt;&lt;552.0,256.0&gt;--&lt;575.0,349.0&gt;&gt; -&gt; L&lt;&lt;575.0,349.0&gt;--&lt;599.0,443.0&gt;&gt;
 
-* aacute (U+00E1): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
+* cent (U+00A2): L&lt;&lt;405.0,408.0&gt;--&lt;357.0,218.0&gt;&gt; -&gt; L&lt;&lt;357.0,218.0&gt;--&lt;310.0,29.0&gt;&gt;
 
-* abreve (U+0103): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
+* g (U+0067): L&lt;&lt;348.0,123.0&gt;--&lt;373.0,223.0&gt;&gt; -&gt; L&lt;&lt;373.0,223.0&gt;--&lt;398.0,323.0&gt;&gt;
 
-* acircumflex (U+00E2): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
+* gbreve (U+011F): L&lt;&lt;348.0,123.0&gt;--&lt;373.0,223.0&gt;&gt; -&gt; L&lt;&lt;373.0,223.0&gt;--&lt;398.0,323.0&gt;&gt;
 
-* adieresis (U+00E4): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
+* lira (U+20A4): L&lt;&lt;505.0,356.0&gt;--&lt;457.0,356.0&gt;&gt; -&gt; L&lt;&lt;457.0,356.0&gt;--&lt;409.0,356.0&gt;&gt;
 
-* agrave (U+00E0): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* aogonek (U+0105): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* aring (U+00E5): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* atilde (U+00E3): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* d (U+0064): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* dcaron (U+010F): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* dcroat (U+0111): L&lt;&lt;349.0,112.0&gt;--&lt;376.0,217.0&gt;&gt; -&gt; L&lt;&lt;376.0,217.0&gt;--&lt;402.0,323.0&gt;&gt;
-
-* dong (U+20AB): L&lt;&lt;349.0,168.0&gt;--&lt;376.0,273.0&gt;&gt; -&gt; L&lt;&lt;376.0,273.0&gt;--&lt;402.0,378.0&gt;&gt;
-
-* dong (U+20AB): L&lt;&lt;419.0,446.0&gt;--&lt;439.0,527.0&gt;&gt; -&gt; L&lt;&lt;439.0,527.0&gt;--&lt;459.0,609.0&gt;&gt;
-
-* g (U+0067): L&lt;&lt;351.0,121.0&gt;--&lt;376.0,223.0&gt;&gt; -&gt; L&lt;&lt;376.0,223.0&gt;--&lt;402.0,325.0&gt;&gt;
-
-* gbreve (U+011F): L&lt;&lt;351.0,121.0&gt;--&lt;376.0,223.0&gt;&gt; -&gt; L&lt;&lt;376.0,223.0&gt;--&lt;402.0,325.0&gt;&gt;
-
-* lira (U+20A4): L&lt;&lt;267.0,392.0&gt;--&lt;305.0,392.0&gt;&gt; -&gt; L&lt;&lt;305.0,392.0&gt;--&lt;343.0,393.0&gt;&gt;
-
-* lira (U+20A4): L&lt;&lt;506.0,363.0&gt;--&lt;457.0,363.0&gt;&gt; -&gt; L&lt;&lt;457.0,363.0&gt;--&lt;407.0,363.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;125.0,167.0&gt;--&lt;215.0,168.0&gt;&gt; -&gt; L&lt;&lt;215.0,168.0&gt;--&lt;305.0,168.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;290.0,138.0&gt;--&lt;207.0,138.0&gt;&gt; -&gt; L&lt;&lt;207.0,138.0&gt;--&lt;125.0,139.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;436.0,362.0&gt;--&lt;527.0,362.0&gt;&gt; -&gt; L&lt;&lt;527.0,362.0&gt;--&lt;618.0,363.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;504.0,138.0&gt;--&lt;414.0,138.0&gt;&gt; -&gt; L&lt;&lt;414.0,138.0&gt;--&lt;323.0,138.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;651.0,363.0&gt;--&lt;734.0,362.0&gt;&gt; -&gt; L&lt;&lt;734.0,362.0&gt;--&lt;816.0,362.0&gt;&gt;
-
-* numbersign (U+0023): L&lt;&lt;816.0,333.0&gt;--&lt;726.0,333.0&gt;&gt; -&gt; L&lt;&lt;726.0,333.0&gt;--&lt;635.0,333.0&gt;&gt;
-
-* p (U+0070): L&lt;&lt;268.0,319.0&gt;--&lt;242.0,213.0&gt;&gt; -&gt; L&lt;&lt;242.0,213.0&gt;--&lt;215.0,108.0&gt;&gt;
+* plus (U+002B): L&lt;&lt;153.0,269.0&gt;--&lt;292.0,269.0&gt;&gt; -&gt; L&lt;&lt;292.0,269.0&gt;--&lt;431.0,269.0&gt;&gt;
 
 * plusminus (U+00B1): L&lt;&lt;377.0,61.0&gt;--&lt;408.0,184.0&gt;&gt; -&gt; L&lt;&lt;408.0,184.0&gt;--&lt;438.0,307.0&gt;&gt;
 
-* trademark (U+2122): L&lt;&lt;284.0,720.0&gt;--&lt;239.0,541.0&gt;&gt; -&gt; L&lt;&lt;239.0,541.0&gt;--&lt;194.0,362.0&gt;&gt;
+* uni0E3F (U+0E3F): L&lt;&lt;373.0,45.0&gt;--&lt;410.0,191.0&gt;&gt; -&gt; L&lt;&lt;410.0,191.0&gt;--&lt;446.0,337.0&gt;&gt;
 
-* uni20A6 (U+20A6): L&lt;&lt;152.0,435.0&gt;--&lt;211.0,436.0&gt;&gt; -&gt; L&lt;&lt;211.0,436.0&gt;--&lt;270.0,436.0&gt;&gt;
+* uni203D (U+203D): L&lt;&lt;397.0,334.0&gt;--&lt;382.0,287.0&gt;&gt; -&gt; L&lt;&lt;382.0,287.0&gt;--&lt;366.0,239.0&gt;&gt;
 
-* uni20A6 (U+20A6): L&lt;&lt;674.0,436.0&gt;--&lt;695.0,517.0&gt;&gt; -&gt; L&lt;&lt;695.0,517.0&gt;--&lt;715.0,597.0&gt;&gt;
+* uni20A6 (U+20A6): L&lt;&lt;151.0,435.0&gt;--&lt;208.0,436.0&gt;&gt; -&gt; L&lt;&lt;208.0,436.0&gt;--&lt;266.0,436.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;204.0,435.0&gt;--&lt;245.0,436.0&gt;&gt; -&gt; L&lt;&lt;245.0,436.0&gt;--&lt;286.0,436.0&gt;&gt;
+* uni20A6 (U+20A6): L&lt;&lt;424.0,399.0&gt;--&lt;365.0,399.0&gt;&gt; -&gt; L&lt;&lt;365.0,399.0&gt;--&lt;305.0,399.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;382.0,241.0&gt;--&lt;415.0,242.0&gt;&gt; -&gt; L&lt;&lt;415.0,242.0&gt;--&lt;448.0,242.0&gt;&gt;
+* uni20A6 (U+20A6): L&lt;&lt;509.0,436.0&gt;--&lt;590.0,436.0&gt;&gt; -&gt; L&lt;&lt;590.0,436.0&gt;--&lt;671.0,436.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;553.0,436.0&gt;--&lt;585.0,495.0&gt;&gt; -&gt; L&lt;&lt;585.0,495.0&gt;--&lt;617.0,554.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;1002.0,399.0&gt;--&lt;956.0,399.0&gt;&gt; -&gt; L&lt;&lt;956.0,399.0&gt;--&lt;910.0,399.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;576.0,406.0&gt;--&lt;532.0,324.0&gt;&gt; -&gt; L&lt;&lt;532.0,324.0&gt;--&lt;487.0,242.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;550.0,436.0&gt;--&lt;582.0,494.0&gt;&gt; -&gt; L&lt;&lt;582.0,494.0&gt;--&lt;613.0,553.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;620.0,487.0&gt;--&lt;606.0,462.0&gt;&gt; -&gt; L&lt;&lt;606.0,462.0&gt;--&lt;593.0,436.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;577.0,399.0&gt;--&lt;535.0,320.0&gt;&gt; -&gt; L&lt;&lt;535.0,320.0&gt;--&lt;492.0,242.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;622.0,436.0&gt;--&lt;621.0,462.0&gt;&gt; -&gt; L&lt;&lt;621.0,462.0&gt;--&lt;620.0,487.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;619.0,399.0&gt;--&lt;598.0,399.0&gt;&gt; -&gt; L&lt;&lt;598.0,399.0&gt;--&lt;577.0,399.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;623.0,406.0&gt;--&lt;600.0,406.0&gt;&gt; -&gt; L&lt;&lt;600.0,406.0&gt;--&lt;576.0,406.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;714.0,436.0&gt;--&lt;799.0,436.0&gt;&gt; -&gt; L&lt;&lt;799.0,436.0&gt;--&lt;884.0,436.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;824.0,242.0&gt;--&lt;890.0,241.0&gt;&gt; -&gt; L&lt;&lt;890.0,241.0&gt;--&lt;955.0,241.0&gt;&gt;
+* uni20A9 (U+20A9): L&lt;&lt;953.0,205.0&gt;--&lt;879.0,205.0&gt;&gt; -&gt; L&lt;&lt;879.0,205.0&gt;--&lt;805.0,205.0&gt;&gt;
 
-* uni20A9 (U+20A9): L&lt;&lt;914.0,406.0&gt;--&lt;869.0,324.0&gt;&gt; -&gt; L&lt;&lt;869.0,324.0&gt;--&lt;824.0,242.0&gt;&gt;
+* uni2422 (U+2422): L&lt;&lt;188.0,503.0&gt;--&lt;202.0,558.0&gt;&gt; -&gt; L&lt;&lt;202.0,558.0&gt;--&lt;216.0,613.0&gt;&gt;
 
-* yen (U+00A5): L&lt;&lt;198.0,435.0&gt;--&lt;272.0,436.0&gt;&gt; -&gt; L&lt;&lt;272.0,436.0&gt;--&lt;346.0,436.0&gt;&gt;
+* yen (U+00A5): L&lt;&lt;355.0,399.0&gt;--&lt;277.0,399.0&gt;&gt; -&gt; L&lt;&lt;277.0,399.0&gt;--&lt;198.0,399.0&gt;&gt;
 
-* yen (U+00A5): L&lt;&lt;355.0,406.0&gt;--&lt;277.0,406.0&gt;&gt; -&gt; L&lt;&lt;277.0,406.0&gt;--&lt;200.0,407.0&gt;&gt;
-
-* yen (U+00A5): L&lt;&lt;703.0,212.0&gt;--&lt;585.0,212.0&gt;&gt; -&gt; L&lt;&lt;585.0,212.0&gt;--&lt;466.0,212.0&gt;&gt; [code: found-colinear-vectors]
+* yen (U+00A5): L&lt;&lt;449.0,436.0&gt;--&lt;506.0,436.0&gt;&gt; -&gt; L&lt;&lt;506.0,436.0&gt;--&lt;564.0,436.0&gt;&gt; [code: found-colinear-vectors]
 </code></pre>
 </span></li></ul></div></details>
 <h3>Do outlines contain any semi-vertical or semi-horizontal lines?</h3>
 <div class='check__idlabel'>Check ID: com.google.fonts/check/outline_semi_vertical</div>
 
 <details><summary>⚠️ ComputerModernClassic-Regular.ttf</summary><div><ul><li class='details_item'><span class='details_indicator'>⚠️ WARN</span><span class='details_text'><p>The following glyphs have semi-vertical/semi-horizontal lines:</p>
-<pre><code>* B (U+0042): L&lt;&lt;225.0,340.0&gt;--&lt;226.0,198.0&gt;&gt;
+<pre><code>* B (U+0042): L&lt;&lt;453.0,1.0&gt;--&lt;241.0,0.0&gt;&gt;
 
-* E (U+0045): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
+* Eth (U+00D0): L&lt;&lt;230.0,313.0&gt;--&lt;231.0,186.0&gt;&gt;
 
-* E (U+0045): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
+* Lslash (U+0141): L&lt;&lt;129.0,342.0&gt;--&lt;128.0,481.0&gt;&gt;
 
-* Eacute (U+00C9): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
+* N (U+004E): L&lt;&lt;172.0,605.0&gt;--&lt;171.0,348.0&gt;&gt;
 
-* Eacute (U+00C9): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
+* Nacute (U+0143): L&lt;&lt;172.0,605.0&gt;--&lt;171.0,348.0&gt;&gt;
 
-* Ecaron (U+011A): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
+* Ncaron (U+0147): L&lt;&lt;172.0,605.0&gt;--&lt;171.0,348.0&gt;&gt;
 
-* Ecaron (U+011A): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
+* Ntilde (U+00D1): L&lt;&lt;172.0,605.0&gt;--&lt;171.0,348.0&gt;&gt;
 
-* Ecircumflex (U+00CA): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
+* P (U+0050): L&lt;&lt;233.0,301.0&gt;--&lt;234.0,182.0&gt;&gt;
 
-* Ecircumflex (U+00CA): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
+* R (U+0052): L&lt;&lt;230.0,323.0&gt;--&lt;231.0,193.0&gt;&gt;
 
-* Edieresis (U+00CB): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
+* Racute (U+0154): L&lt;&lt;230.0,323.0&gt;--&lt;231.0,193.0&gt;&gt;
 
-* Edieresis (U+00CB): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
-
-* Egrave (U+00C8): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
-
-* Egrave (U+00C8): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
-
-* Eng (U+014A): L&lt;&lt;228.0,566.0&gt;--&lt;229.0,313.0&gt;&gt;
-
-* Eogonek (U+0118): L&lt;&lt;228.0,335.0&gt;--&lt;229.0,195.0&gt;&gt;
-
-* Eogonek (U+0118): L&lt;&lt;229.0,499.0&gt;--&lt;228.0,372.0&gt;&gt;
-
-* F (U+0046): L&lt;&lt;228.0,322.0&gt;--&lt;229.0,191.0&gt;&gt;
-
-* F (U+0046): L&lt;&lt;229.0,492.0&gt;--&lt;228.0,359.0&gt;&gt;
-
-* Lslash (U+0141): L&lt;&lt;228.0,371.0&gt;--&lt;229.0,213.0&gt;&gt;
-
-* N (U+004E): L&lt;&lt;582.0,164.0&gt;--&lt;581.0,381.0&gt;&gt;
-
-* Nacute (U+0143): L&lt;&lt;582.0,164.0&gt;--&lt;581.0,381.0&gt;&gt;
-
-* Ncaron (U+0147): L&lt;&lt;582.0,164.0&gt;--&lt;581.0,381.0&gt;&gt;
-
-* Ntilde (U+00D1): L&lt;&lt;582.0,164.0&gt;--&lt;581.0,381.0&gt;&gt;
+* Rcaron (U+0158): L&lt;&lt;230.0,323.0&gt;--&lt;231.0,193.0&gt;&gt;
 
 * Z (U+005A): L&lt;&lt;303.0,0.0&gt;--&lt;63.0,1.0&gt;&gt;
 
@@ -1459,99 +1421,99 @@ uni0361 (U+0361) [code: mark-chars]</p>
 
 * Zdotaccent (U+017B): L&lt;&lt;303.0,0.0&gt;--&lt;63.0,1.0&gt;&gt;
 
-* a (U+0061): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* a (U+0061): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* aacute (U+00E1): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* aacute (U+00E1): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* abreve (U+0103): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* abreve (U+0103): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* acircumflex (U+00E2): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* acircumflex (U+00E2): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* adieresis (U+00E4): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* adieresis (U+00E4): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* agrave (U+00E0): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* agrave (U+00E0): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* aogonek (U+0105): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* aogonek (U+0105): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* aring (U+00E5): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* aring (U+00E5): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
 * arrowleft (U+2190): L&lt;&lt;163.0,271.0&gt;--&lt;546.0,270.0&gt;&gt;
 
 * arrowright (U+2192): L&lt;&lt;452.0,270.0&gt;--&lt;835.0,271.0&gt;&gt;
 
-* atilde (U+00E3): L&lt;&lt;398.0,320.0&gt;--&lt;399.0,194.0&gt;&gt;
+* atilde (U+00E3): L&lt;&lt;402.0,195.0&gt;--&lt;403.0,69.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;211.0,363.0&gt;--&lt;212.0,499.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;291.0,136.0&gt;--&lt;292.0,2.0&gt;&gt;
 
-* braceleft (U+007B): L&lt;&lt;212.0,2.0&gt;--&lt;211.0,137.0&gt;&gt;
+* braceleft (U+007B): L&lt;&lt;292.0,498.0&gt;--&lt;291.0,364.0&gt;&gt;
 
-* dotlessi (U+0131): L&lt;&lt;181.0,442.0&gt;--&lt;182.0,250.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;208.0,2.0&gt;--&lt;209.0,136.0&gt;&gt;
 
-* dotlessj (U+0237): L&lt;&lt;214.0,185.0&gt;--&lt;213.0,-71.0&gt;&gt;
+* braceright (U+007D): L&lt;&lt;209.0,364.0&gt;--&lt;208.0,498.0&gt;&gt;
 
-* f (U+0066): L&lt;&lt;107.0,226.0&gt;--&lt;108.0,393.0&gt;&gt;
+* ff (U+FB00): L&lt;&lt;179.0,224.0&gt;--&lt;180.0,61.0&gt;&gt;
 
-* f (U+0066): L&lt;&lt;181.0,393.0&gt;--&lt;182.0,226.0&gt;&gt;
+* ff (U+FB00): L&lt;&lt;375.0,61.0&gt;--&lt;376.0,224.0&gt;&gt;
 
-* ffl (U+FB04): L&lt;&lt;656.0,58.0&gt;--&lt;657.0,226.0&gt;&gt;
+* ffi (U+FB03): L&lt;&lt;179.0,224.0&gt;--&lt;180.0,61.0&gt;&gt;
 
-* ffl (U+FB04): L&lt;&lt;730.0,695.0&gt;--&lt;731.0,376.0&gt;&gt;
+* ffi (U+FB03): L&lt;&lt;375.0,61.0&gt;--&lt;376.0,224.0&gt;&gt;
 
-* h (U+0068): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* ffl (U+FB04): L&lt;&lt;179.0,224.0&gt;--&lt;180.0,61.0&gt;&gt;
 
-* h (U+0068): L&lt;&lt;460.0,193.0&gt;--&lt;461.0,58.0&gt;&gt;
+* ffl (U+FB04): L&lt;&lt;375.0,61.0&gt;--&lt;376.0,224.0&gt;&gt;
 
-* i (U+0069): L&lt;&lt;181.0,442.0&gt;--&lt;182.0,250.0&gt;&gt;
+* fi (U+FB01): L&lt;&lt;179.0,224.0&gt;--&lt;180.0,61.0&gt;&gt;
 
-* iacute (U+00ED): L&lt;&lt;181.0,442.0&gt;--&lt;182.0,250.0&gt;&gt;
+* fl (U+FB02): L&lt;&lt;179.0,224.0&gt;--&lt;180.0,61.0&gt;&gt;
 
-* icircumflex (U+00EE): L&lt;&lt;181.0,442.0&gt;--&lt;182.0,250.0&gt;&gt;
+* fl (U+FB02): L&lt;&lt;375.0,61.0&gt;--&lt;376.0,224.0&gt;&gt;
 
-* igrave (U+00EC): L&lt;&lt;181.0,442.0&gt;--&lt;182.0,250.0&gt;&gt;
+* four (U+0034): L&lt;&lt;378.0,440.0&gt;--&lt;379.0,209.0&gt;&gt;
 
-* ij (U+0133): L&lt;&lt;499.0,442.0&gt;--&lt;498.0,185.0&gt;&gt;
+* ij (U+0133): L&lt;&lt;197.0,251.0&gt;--&lt;198.0,61.0&gt;&gt;
 
-* j (U+006A): L&lt;&lt;214.0,185.0&gt;--&lt;213.0,-71.0&gt;&gt;
+* k (U+006B): L&lt;&lt;179.0,695.0&gt;--&lt;180.0,233.0&gt;&gt;
 
-* l (U+006C): L&lt;&lt;181.0,695.0&gt;--&lt;182.0,376.0&gt;&gt;
+* lslash (U+0142): L&lt;&lt;132.0,351.0&gt;--&lt;131.0,478.0&gt;&gt;
 
-* lacute (U+013A): L&lt;&lt;181.0,695.0&gt;--&lt;182.0,376.0&gt;&gt;
+* lslash (U+0142): L&lt;&lt;212.0,360.0&gt;--&lt;213.0,210.0&gt;&gt;
 
-* lcaron (U+013E): L&lt;&lt;181.0,695.0&gt;--&lt;182.0,376.0&gt;&gt;
-
-* m (U+006D): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* m (U+006D): L&lt;&lt;741.0,195.0&gt;--&lt;742.0,61.0&gt;&gt;
 
 * musicalnote (U+266A): L&lt;&lt;387.0,497.0&gt;--&lt;386.0,317.0&gt;&gt;
 
-* n (U+006E): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* thorn (U+00FE): L&lt;&lt;179.0,547.0&gt;--&lt;180.0,390.0&gt;&gt;
 
-* n (U+006E): L&lt;&lt;460.0,193.0&gt;--&lt;461.0,58.0&gt;&gt;
+* trademark (U+2122): L&lt;&lt;409.0,655.0&gt;--&lt;408.0,511.0&gt;&gt;
 
-* nacute (U+0144): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* u (U+0075): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* nacute (U+0144): L&lt;&lt;460.0,193.0&gt;--&lt;461.0,58.0&gt;&gt;
+* uacute (U+00FA): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* ncaron (U+0148): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* ucircumflex (U+00FB): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* ncaron (U+0148): L&lt;&lt;460.0,193.0&gt;--&lt;461.0,58.0&gt;&gt;
+* udieresis (U+00FC): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* ntilde (U+00F1): L&lt;&lt;383.0,58.0&gt;--&lt;384.0,187.0&gt;&gt;
+* ugrave (U+00F9): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* ntilde (U+00F1): L&lt;&lt;460.0,193.0&gt;--&lt;461.0,58.0&gt;&gt;
+* uhungarumlaut (U+0171): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* numbersign (U+0023): L&lt;&lt;767.0,139.0&gt;--&lt;643.0,138.0&gt;&gt;
+* uni00B5 (U+00B5): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
-* one (U+0031): L&lt;&lt;216.0,61.0&gt;--&lt;217.0,325.0&gt;&gt;
+* uni2045 (U+2045): L&lt;&lt;153.0,495.0&gt;--&lt;154.0,366.0&gt;&gt;
 
-* one (U+0031): L&lt;&lt;298.0,360.0&gt;--&lt;299.0,61.0&gt;&gt;
+* uni2045 (U+2045): L&lt;&lt;154.0,134.0&gt;--&lt;153.0,6.0&gt;&gt;
 
-* q (U+0071): L&lt;&lt;452.0,153.0&gt;--&lt;453.0,-136.0&gt;&gt;
+* uni2116 (U+2116): L&lt;&lt;466.0,251.0&gt;--&lt;467.0,400.0&gt;&gt;
 
-* uni0E3F (U+0E3F): L&lt;&lt;225.0,340.0&gt;--&lt;226.0,198.0&gt;&gt;
+* uni211E (U+211E): L&lt;&lt;230.0,323.0&gt;--&lt;231.0,191.0&gt;&gt;
 
-* uni20A6 (U+20A6): L&lt;&lt;457.0,211.0&gt;--&lt;181.0,212.0&gt;&gt;
+* uni2120 (U+2120): L&lt;&lt;409.0,655.0&gt;--&lt;408.0,511.0&gt;&gt;
 
-* uni2116 (U+2116): L&lt;&lt;224.0,586.0&gt;--&lt;223.0,358.0&gt;&gt;
+* uni2422 (U+2422): L&lt;&lt;179.0,695.0&gt;--&lt;180.0,570.0&gt;&gt;
+
+* uring (U+016F): L&lt;&lt;186.0,442.0&gt;--&lt;187.0,263.0&gt;&gt;
 
 * z (U+007A): L&lt;&lt;210.0,0.0&gt;--&lt;35.0,1.0&gt;&gt;
 

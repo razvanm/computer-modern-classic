@@ -2,16 +2,16 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="372.000000pt" height="177.000000pt" viewBox="0 0 372.000000 177.000000"
+ width="376.000000pt" height="183.000000pt" viewBox="0 0 376.000000 183.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.16, written by Peter Selinger 2001-2019
 </metadata>
-<g transform="translate(0.000000,177.000000) scale(0.100000,-0.100000)"
+<g transform="translate(0.000000,183.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
-<path d="M132 1584 c-67 -102 -120 -189 -117 -194 3 -5 419 -320 923 -698
-l917 -689 908 682 c500 375 915 689 924 697 13 14 2 35 -109 200 l-123 185
--795 -465 c-437 -255 -799 -465 -805 -465 -8 0 -1415 818 -1570 913 l-30 18
--123 -184z"/>
+<path d="M152 1603 c-143 -214 -151 -229 -134 -244 19 -18 1851 -1359 1857
+-1359 6 0 1838 1341 1857 1359 17 15 9 29 -132 241 -83 124 -154 224 -158 223
+-5 -1 -358 -202 -785 -447 -428 -245 -779 -446 -782 -446 -4 0 -1464 835
+-1541 881 l-31 19 -151 -227z"/>
 </g>
 </svg>
