@@ -298,10 +298,10 @@ fontbakery version: 0.10.8
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
  * U+0361 COMBINING DOUBLE INVERTED BREVE: try adding coptic
  * U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai
@@ -334,13 +334,13 @@ fontbakery version: 0.10.8
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
@@ -829,10 +829,10 @@ logicalnot
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, tifinagh, yi
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
  * U+0361 COMBINING DOUBLE INVERTED BREVE: try adding coptic
  * U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai
@@ -865,13 +865,13 @@ logicalnot
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
