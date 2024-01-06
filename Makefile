@@ -35,9 +35,11 @@ test: venv build.stamp
 test-glyph-coverage:
 	. venv/bin/activate; \
 	fontbakery check-googlefonts --no-colors --full-lists --succinct --checkid com.google.fonts/check/glyph_coverage fonts/ttf/ComputerModernClassic-Regular.ttf | grep 0x > missing-regular && \
-	fontbakery check-googlefonts --no-colors --full-lists --succinct --checkid com.google.fonts/check/glyph_coverage fonts/ttf/ComputerModernClassic-Italic.ttf | grep 0x > missing-italic && \
-	egrep "$(shell cat GF_Latin_Kernel.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-regular > missing-regular.kernel || \
-	egrep "$(shell cat GF_Latin_Kernel.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-italic > missing-italic.kernel || true
+	fontbakery check-googlefonts --no-colors --full-lists --succinct --checkid com.google.fonts/check/glyph_coverage fonts/ttf/ComputerModernClassic-Italic.ttf | grep 0x > missing-italic
+	-egrep "$(shell cat GF_Latin_Kernel.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-regular > missing-regular.kernel
+	-egrep "$(shell cat GF_Latin_Kernel.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-italic > missing-italic.kernel
+	-egrep "$(shell cat GF_Latin_Core.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-regular > missing-regular.core
+	-egrep "$(shell cat GF_Latin_Core.nam | cut -d ' ' -f 1 | xargs | tr ' ' '|')" missing-italic > missing-italic.core
 
 proof: venv build.stamp
 	. venv/bin/activate; mkdir -p out/ out/proof; diffenator2 proof $(shell find fonts/ttf -type f) -o out/proof
