@@ -1,5 +1,5 @@
 pixels_per_inch:=4000 + 4000 + 2000;
-blacker:=10;
+blacker:=20;
 fillin:=0;
 o_correction:=1;
 
