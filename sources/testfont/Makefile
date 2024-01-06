@@ -17,9 +17,9 @@ gf: $(addsuffix .gf,$(FONTS))
 html: index.html
 
 # Reference for \smode: https://texfaq.org/FAQ-useMF
-%.gf:
+%.gf: custom.mf
 	mf-nowin -interaction=nonstopmode '\smode="custom"; input $(basename $@)'
-	ln -s $(basename $@).10000gf $(basename $@).gf
+	ln -f -s $(basename $@).10000gf $(basename $@).gf
 
 %.pl: %.tfm
 	tftopl -charcode-format=octal $< $@
