@@ -9,43 +9,9 @@ fontbakery version: 0.10.8
 
 | Language | FAIL messages |
 | :--- | :--- |
-| ca_Latn (Catalan) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈, ◌̧ |
-| cs_Latn (Czech) | Some mark glyphs were missing: ◌́, ◌̊, ◌̌ |
-| cy_Latn (Welsh) | Some base glyphs were missing: ŵ, ŷ, ẁ, ẃ, ẅ, ỳ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
+| mt_Latn (Maltese) | Some base glyphs were missing: għ, ħ |
 |  ^  | Shaper produced a .notdef |
-| da_Latn (Danish) | Some mark glyphs were missing: ◌́, ◌̊ |
-| de_Latn (German) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈ |
-| en_Latn (English) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̃, ◌̈, ◌̧ |
-| es_Latn (Spanish) | Some mark glyphs were missing: ◌́, ◌̃, ◌̈ |
-| fi_Latn (Finnish) | Some mark glyphs were missing: ◌̃, ◌̈, ◌̊, ◌̌ |
-| fr_Latn (French) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈, ◌̧ |
-| hr_Latn (Croatian) | Some mark glyphs were missing: ◌́, ◌̌ |
-| hu_Latn (Hungarian) | Some mark glyphs were missing: ◌́, ◌̈, ◌̋ |
-| is_Latn (Icelandic) | Some mark glyphs were missing: ◌́, ◌̈, ◌̨ |
-| it_Latn (Italian) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
-| lt_Latn (Lithuanian) | Some base glyphs were missing: ė, į, ū, ų |
-|  ^  | Some mark glyphs were missing: ◌̄, ◌̇, ◌̌, ◌̨ |
-|  ^  | Shaper produced a .notdef |
-| lv_Latn (Latvian) | Some base glyphs were missing: ā, ē, ģ, ī, ķ, ļ, ņ, ū |
-|  ^  | Some mark glyphs were missing: ◌̄, ◌̌, ◌̧ |
-|  ^  | Shaper produced a .notdef |
-| mt_Latn (Maltese) | Some base glyphs were missing: għ, ċ, ġ, ħ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌̂, ◌̇ |
-|  ^  | Shaper produced a .notdef |
-| nl_Latn (Dutch) | Some base glyphs were missing: íj́ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
-|  ^  | Shaper produced a .notdef |
-| pl_Latn (Polish) | Some mark glyphs were missing: ◌́, ◌̇, ◌̨ |
-| pt_Latn (Portuguese) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̃, ◌̈, ◌̧ |
-| ro_Latn (Romanian) | Some base glyphs were missing: ș, ț |
-|  ^  | Some mark glyphs were missing: ◌̂, ◌̆, ◌̦, ◌̧ |
-|  ^  | Shaper produced a .notdef |
-|  ^  | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+555 |
-| sk_Latn (Slovak) | Some mark glyphs were missing: ◌́, ◌̂, ◌̈, ◌̌ |
-| sq_Latn (Albanian) | Some mark glyphs were missing: ◌̈, ◌̧ |
-| sv_Latn (Swedish) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈, ◌̊ |
-| tr_Latn (Turkish) | Some mark glyphs were missing: ◌̂, ◌̆, ◌̇, ◌̈, ◌̦, ◌̧ |
+| ro_Latn (Romanian) | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+555 |
 
  [code: failed-language-shaping]
 * ⚠ **WARN** GF_Latin_Core glyphset:
@@ -62,43 +28,9 @@ fontbakery version: 0.10.8
 
 | Language | FAIL messages |
 | :--- | :--- |
-| ca_Latn (Catalan) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈, ◌̧ |
-| cs_Latn (Czech) | Some mark glyphs were missing: ◌́, ◌̊, ◌̌ |
-| cy_Latn (Welsh) | Some base glyphs were missing: ŵ, ŷ, ẁ, ẃ, ẅ, ỳ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
+| mt_Latn (Maltese) | Some base glyphs were missing: għ, ħ |
 |  ^  | Shaper produced a .notdef |
-| da_Latn (Danish) | Some mark glyphs were missing: ◌́, ◌̊ |
-| de_Latn (German) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈ |
-| en_Latn (English) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̃, ◌̈, ◌̧ |
-| es_Latn (Spanish) | Some mark glyphs were missing: ◌́, ◌̃, ◌̈ |
-| fi_Latn (Finnish) | Some mark glyphs were missing: ◌̃, ◌̈, ◌̊, ◌̌ |
-| fr_Latn (French) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈, ◌̧ |
-| hr_Latn (Croatian) | Some mark glyphs were missing: ◌́, ◌̌ |
-| hu_Latn (Hungarian) | Some mark glyphs were missing: ◌́, ◌̈, ◌̋ |
-| is_Latn (Icelandic) | Some mark glyphs were missing: ◌́, ◌̈, ◌̨ |
-| it_Latn (Italian) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
-| lt_Latn (Lithuanian) | Some base glyphs were missing: ė, į, ū, ų |
-|  ^  | Some mark glyphs were missing: ◌̄, ◌̇, ◌̌, ◌̨ |
-|  ^  | Shaper produced a .notdef |
-| lv_Latn (Latvian) | Some base glyphs were missing: ā, ē, ģ, ī, ķ, ļ, ņ, ū |
-|  ^  | Some mark glyphs were missing: ◌̄, ◌̌, ◌̧ |
-|  ^  | Shaper produced a .notdef |
-| mt_Latn (Maltese) | Some base glyphs were missing: għ, ċ, ġ, ħ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌̂, ◌̇ |
-|  ^  | Shaper produced a .notdef |
-| nl_Latn (Dutch) | Some base glyphs were missing: íj́ |
-|  ^  | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̈ |
-|  ^  | Shaper produced a .notdef |
-| pl_Latn (Polish) | Some mark glyphs were missing: ◌́, ◌̇, ◌̨ |
-| pt_Latn (Portuguese) | Some mark glyphs were missing: ◌̀, ◌́, ◌̂, ◌̃, ◌̈, ◌̧ |
-| ro_Latn (Romanian) | Some base glyphs were missing: ș, ț |
-|  ^  | Some mark glyphs were missing: ◌̂, ◌̆, ◌̦, ◌̧ |
-|  ^  | Shaper produced a .notdef |
-|  ^  | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+562 |
-| sk_Latn (Slovak) | Some mark glyphs were missing: ◌́, ◌̂, ◌̈, ◌̌ |
-| sq_Latn (Albanian) | Some mark glyphs were missing: ◌̈, ◌̧ |
-| sv_Latn (Swedish) | Some mark glyphs were missing: ◌̀, ◌́, ◌̈, ◌̊ |
-| tr_Latn (Turkish) | Some mark glyphs were missing: ◌̂, ◌̆, ◌̇, ◌̈, ◌̦, ◌̧ |
+| ro_Latn (Romanian) | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+562 |
 
  [code: failed-language-shaping]
 * ⚠ **WARN** GF_Latin_Core glyphset:
@@ -108,186 +40,18 @@ fontbakery version: 0.10.8
 | nb_Latn (Norwegian Bokmål) | No exemplar glyphs were defined for language Norwegian Bokmål |
 
  [code: warning-language-shaping]
-</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
 
-	- 0x0100 (LATIN CAPITAL LETTER A WITH MACRON)
-
-
-	- 0x0101 (LATIN SMALL LETTER A WITH MACRON)
-
-
-	- 0x010A (LATIN CAPITAL LETTER C WITH DOT ABOVE)
-
-
-	- 0x010B (LATIN SMALL LETTER C WITH DOT ABOVE)
-
-
 	- 0x0110 (LATIN CAPITAL LETTER D WITH STROKE)
-
-
-	- 0x0112 (LATIN CAPITAL LETTER E WITH MACRON)
-
-
-	- 0x0113 (LATIN SMALL LETTER E WITH MACRON)
-
-
-	- 0x0116 (LATIN CAPITAL LETTER E WITH DOT ABOVE)
-
-
-	- 0x0117 (LATIN SMALL LETTER E WITH DOT ABOVE)
-
-
-	- 0x0120 (LATIN CAPITAL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0121 (LATIN SMALL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0122 (LATIN CAPITAL LETTER G WITH CEDILLA)
-
-
-	- 0x0123 (LATIN SMALL LETTER G WITH CEDILLA)
 
 
 	- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
 
 
 	- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
-
-
-	- 0x012A (LATIN CAPITAL LETTER I WITH MACRON)
-
-
-	- 0x012B (LATIN SMALL LETTER I WITH MACRON)
-
-
-	- 0x012E (LATIN CAPITAL LETTER I WITH OGONEK)
-
-
-	- 0x012F (LATIN SMALL LETTER I WITH OGONEK)
-
-
-	- 0x0136 (LATIN CAPITAL LETTER K WITH CEDILLA)
-
-
-	- 0x0137 (LATIN SMALL LETTER K WITH CEDILLA)
-
-
-	- 0x013B (LATIN CAPITAL LETTER L WITH CEDILLA)
-
-
-	- 0x013C (LATIN SMALL LETTER L WITH CEDILLA)
-
-
-	- 0x0145 (LATIN CAPITAL LETTER N WITH CEDILLA)
-
-
-	- 0x0146 (LATIN SMALL LETTER N WITH CEDILLA)
-
-
-	- 0x016A (LATIN CAPITAL LETTER U WITH MACRON)
-
-
-	- 0x016B (LATIN SMALL LETTER U WITH MACRON)
-
-
-	- 0x0172 (LATIN CAPITAL LETTER U WITH OGONEK)
-
-
-	- 0x0173 (LATIN SMALL LETTER U WITH OGONEK)
-
-
-	- 0x0174 (LATIN CAPITAL LETTER W WITH CIRCUMFLEX)
-
-
-	- 0x0175 (LATIN SMALL LETTER W WITH CIRCUMFLEX)
-
-
-	- 0x0176 (LATIN CAPITAL LETTER Y WITH CIRCUMFLEX)
-
-
-	- 0x0177 (LATIN SMALL LETTER Y WITH CIRCUMFLEX)
-
-
-	- 0x0218 (LATIN CAPITAL LETTER S WITH COMMA BELOW)
-
-
-	- 0x0219 (LATIN SMALL LETTER S WITH COMMA BELOW)
-
-
-	- 0x021A (LATIN CAPITAL LETTER T WITH COMMA BELOW)
-
-
-	- 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
-
-
-	- 0x0300 (COMBINING GRAVE ACCENT)
-
-
-	- 0x0301 (COMBINING ACUTE ACCENT)
-
-
-	- 0x0302 (COMBINING CIRCUMFLEX ACCENT)
-
-
-	- 0x0303 (COMBINING TILDE)
-
-
-	- 0x0304 (COMBINING MACRON)
-
-
-	- 0x0306 (COMBINING BREVE)
-
-
-	- 0x0307 (COMBINING DOT ABOVE)
-
-
-	- 0x0308 (COMBINING DIAERESIS)
-
-
-	- 0x030A (COMBINING RING ABOVE)
-
-
-	- 0x030B (COMBINING DOUBLE ACUTE ACCENT)
-
-
-	- 0x030C (COMBINING CARON)
-
-
-	- 0x0326 (COMBINING COMMA BELOW)
-
-
-	- 0x0327 (COMBINING CEDILLA)
-
-
-	- 0x0328 (COMBINING OGONEK)
-
-
-	- 0x1E80 (LATIN CAPITAL LETTER W WITH GRAVE)
-
-
-	- 0x1E81 (LATIN SMALL LETTER W WITH GRAVE)
-
-
-	- 0x1E82 (LATIN CAPITAL LETTER W WITH ACUTE)
-
-
-	- 0x1E83 (LATIN SMALL LETTER W WITH ACUTE)
-
-
-	- 0x1E84 (LATIN CAPITAL LETTER W WITH DIAERESIS)
-
-
-	- 0x1E85 (LATIN SMALL LETTER W WITH DIAERESIS)
-
-
-	- 0x1EF2 (LATIN CAPITAL LETTER Y WITH GRAVE)
-
-
-	- 0x1EF3 (LATIN SMALL LETTER Y WITH GRAVE)
  [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
@@ -298,11 +62,20 @@ fontbakery version: 0.10.8
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, malayalam, tai-le, math, tifinagh
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
  * U+0361 COMBINING DOUBLE INVERTED BREVE: try adding coptic
  * U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai
  * U+2016 DOUBLE VERTICAL LINE: not included in any glyphset definition
@@ -337,7 +110,7 @@ fontbakery version: 0.10.8
  * U+266A EIGHTH NOTE: try adding one of: music, symbols
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
  * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
@@ -444,6 +217,10 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: onesuperior	Contours detected: 2	Expected: 1
 
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
 	- Glyph name: Germandbls	Contours detected: 2	Expected: 1
 
 	- Glyph name: daggerdbl	Contours detected: 2	Expected: 1 or 3
@@ -460,6 +237,8 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
 
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
 	- Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 
 	- Glyph name: daggerdbl	Contours detected: 2	Expected: 1 or 3
@@ -473,6 +252,8 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: uni26AE	Contours detected: 5	Expected: 3
 
 	- Glyph name: uni2E18	Contours detected: 3	Expected: 2
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
@@ -490,6 +271,11 @@ logicalnot
 * ⚠ **WARN** dcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
+</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
+
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B), uni030C (U+030C), uni0326 (U+0326), uni0327 (U+0327) and uni0328 (U+0328) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -511,6 +297,8 @@ logicalnot
 	* Nacute (U+0143): L<<172.0,605.0>--<171.0,348.0>>
 
 	* Ncaron (U+0147): L<<172.0,605.0>--<171.0,348.0>>
+
+	* Ncedilla (U+0145): L<<172.0,605.0>--<171.0,348.0>>
 
 	* Ntilde (U+00D1): L<<172.0,605.0>--<171.0,348.0>>
 
@@ -541,6 +329,8 @@ logicalnot
 	* adieresis (U+00E4): L<<402.0,195.0>--<403.0,69.0>>
 
 	* agrave (U+00E0): L<<402.0,195.0>--<403.0,69.0>>
+
+	* amacron (U+0101): L<<402.0,195.0>--<403.0,69.0>>
 
 	* aogonek (U+0105): L<<402.0,195.0>--<403.0,69.0>>
 
@@ -584,6 +374,8 @@ logicalnot
 
 	* k (U+006B): L<<179.0,695.0>--<180.0,233.0>>
 
+	* kcedilla (U+0137): L<<179.0,695.0>--<180.0,233.0>>
+
 	* lslash (U+0142): L<<132.0,351.0>--<131.0,478.0>>
 
 	* lslash (U+0142): L<<212.0,360.0>--<213.0,210.0>>
@@ -608,6 +400,8 @@ logicalnot
 
 	* uhungarumlaut (U+0171): L<<186.0,442.0>--<187.0,263.0>>
 
+	* umacron (U+016B): L<<186.0,442.0>--<187.0,263.0>>
+
 	* uni00B5 (U+00B5): L<<186.0,442.0>--<187.0,263.0>>
 
 	* uni2045 (U+2045): L<<153.0,495.0>--<154.0,366.0>>
@@ -621,6 +415,8 @@ logicalnot
 	* uni2120 (U+2120): L<<409.0,655.0>--<408.0,511.0>>
 
 	* uni2422 (U+2422): L<<179.0,695.0>--<180.0,570.0>>
+
+	* uogonek (U+0173): L<<186.0,442.0>--<187.0,263.0>>
 
 	* uring (U+016F): L<<186.0,442.0>--<187.0,263.0>>
 
@@ -639,186 +435,28 @@ logicalnot
 	* zdotaccent (U+017C): L<<210.0,0.0>--<35.0,1.0>>
 
 	* zdotaccent (U+017C): L<<223.0,431.0>--<392.0,430.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
 
-	- 0x0100 (LATIN CAPITAL LETTER A WITH MACRON)
-
-
-	- 0x0101 (LATIN SMALL LETTER A WITH MACRON)
-
-
-	- 0x010A (LATIN CAPITAL LETTER C WITH DOT ABOVE)
-
-
-	- 0x010B (LATIN SMALL LETTER C WITH DOT ABOVE)
-
-
 	- 0x0110 (LATIN CAPITAL LETTER D WITH STROKE)
-
-
-	- 0x0112 (LATIN CAPITAL LETTER E WITH MACRON)
-
-
-	- 0x0113 (LATIN SMALL LETTER E WITH MACRON)
-
-
-	- 0x0116 (LATIN CAPITAL LETTER E WITH DOT ABOVE)
-
-
-	- 0x0117 (LATIN SMALL LETTER E WITH DOT ABOVE)
-
-
-	- 0x0120 (LATIN CAPITAL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0121 (LATIN SMALL LETTER G WITH DOT ABOVE)
-
-
-	- 0x0122 (LATIN CAPITAL LETTER G WITH CEDILLA)
-
-
-	- 0x0123 (LATIN SMALL LETTER G WITH CEDILLA)
 
 
 	- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
 
 
 	- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
-
-
-	- 0x012A (LATIN CAPITAL LETTER I WITH MACRON)
-
-
-	- 0x012B (LATIN SMALL LETTER I WITH MACRON)
-
-
-	- 0x012E (LATIN CAPITAL LETTER I WITH OGONEK)
-
-
-	- 0x012F (LATIN SMALL LETTER I WITH OGONEK)
-
-
-	- 0x0136 (LATIN CAPITAL LETTER K WITH CEDILLA)
-
-
-	- 0x0137 (LATIN SMALL LETTER K WITH CEDILLA)
-
-
-	- 0x013B (LATIN CAPITAL LETTER L WITH CEDILLA)
-
-
-	- 0x013C (LATIN SMALL LETTER L WITH CEDILLA)
-
-
-	- 0x0145 (LATIN CAPITAL LETTER N WITH CEDILLA)
-
-
-	- 0x0146 (LATIN SMALL LETTER N WITH CEDILLA)
-
-
-	- 0x016A (LATIN CAPITAL LETTER U WITH MACRON)
-
-
-	- 0x016B (LATIN SMALL LETTER U WITH MACRON)
-
-
-	- 0x0172 (LATIN CAPITAL LETTER U WITH OGONEK)
-
-
-	- 0x0173 (LATIN SMALL LETTER U WITH OGONEK)
-
-
-	- 0x0174 (LATIN CAPITAL LETTER W WITH CIRCUMFLEX)
-
-
-	- 0x0175 (LATIN SMALL LETTER W WITH CIRCUMFLEX)
-
-
-	- 0x0176 (LATIN CAPITAL LETTER Y WITH CIRCUMFLEX)
-
-
-	- 0x0177 (LATIN SMALL LETTER Y WITH CIRCUMFLEX)
-
-
-	- 0x0218 (LATIN CAPITAL LETTER S WITH COMMA BELOW)
-
-
-	- 0x0219 (LATIN SMALL LETTER S WITH COMMA BELOW)
-
-
-	- 0x021A (LATIN CAPITAL LETTER T WITH COMMA BELOW)
-
-
-	- 0x021B (LATIN SMALL LETTER T WITH COMMA BELOW)
-
-
-	- 0x0300 (COMBINING GRAVE ACCENT)
-
-
-	- 0x0301 (COMBINING ACUTE ACCENT)
-
-
-	- 0x0302 (COMBINING CIRCUMFLEX ACCENT)
-
-
-	- 0x0303 (COMBINING TILDE)
-
-
-	- 0x0304 (COMBINING MACRON)
-
-
-	- 0x0306 (COMBINING BREVE)
-
-
-	- 0x0307 (COMBINING DOT ABOVE)
-
-
-	- 0x0308 (COMBINING DIAERESIS)
-
-
-	- 0x030A (COMBINING RING ABOVE)
-
-
-	- 0x030B (COMBINING DOUBLE ACUTE ACCENT)
-
-
-	- 0x030C (COMBINING CARON)
-
-
-	- 0x0326 (COMBINING COMMA BELOW)
-
-
-	- 0x0327 (COMBINING CEDILLA)
-
-
-	- 0x0328 (COMBINING OGONEK)
-
-
-	- 0x1E80 (LATIN CAPITAL LETTER W WITH GRAVE)
-
-
-	- 0x1E81 (LATIN SMALL LETTER W WITH GRAVE)
-
-
-	- 0x1E82 (LATIN CAPITAL LETTER W WITH ACUTE)
-
-
-	- 0x1E83 (LATIN SMALL LETTER W WITH ACUTE)
-
-
-	- 0x1E84 (LATIN CAPITAL LETTER W WITH DIAERESIS)
-
-
-	- 0x1E85 (LATIN SMALL LETTER W WITH DIAERESIS)
-
-
-	- 0x1EF2 (LATIN CAPITAL LETTER Y WITH GRAVE)
-
-
-	- 0x1EF3 (LATIN SMALL LETTER Y WITH GRAVE)
  [code: missing-codepoints]
 </div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
@@ -829,11 +467,20 @@ logicalnot
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, malayalam, tai-le, math, tifinagh
+ * U+030A COMBINING RING ABOVE: try adding syriac
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+ * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
+ * U+0327 COMBINING CEDILLA: not included in any glyphset definition
+ * U+0328 COMBINING OGONEK: not included in any glyphset definition
  * U+0361 COMBINING DOUBLE INVERTED BREVE: try adding coptic
  * U+0E3F THAI CURRENCY SYMBOL BAHT: try adding thai
  * U+2016 DOUBLE VERTICAL LINE: not included in any glyphset definition
@@ -868,7 +515,7 @@ logicalnot
  * U+266A EIGHTH NOTE: try adding one of: music, symbols
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
  * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
@@ -981,6 +628,10 @@ The following glyphs do not have the recommended number of contours:
 
 	- Glyph name: threequarters	Contours detected: 5	Expected: 3 or 4
 
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
 	- Glyph name: Germandbls	Contours detected: 2	Expected: 1
 
 	- Glyph name: daggerdbl	Contours detected: 2	Expected: 1 or 3
@@ -998,6 +649,8 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: fl	Contours detected: 3	Expected: 1 or 2
 
 	- Glyph name: Q	Contours detected: 3	Expected: 2
+
+	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
 	- Glyph name: colonmonetary	Contours detected: 2	Expected: 1 or 3
 
@@ -1020,6 +673,8 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: uni26AE	Contours detected: 5	Expected: 3
 
 	- Glyph name: uni2E18	Contours detected: 3	Expected: 2
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
  [code: contour-count]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
@@ -1037,6 +692,11 @@ logicalnot
 * ⚠ **WARN** dcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
+</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
+
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B), uni030C (U+030C), uni0326 (U+0326), uni0327 (U+0327) and uni0328 (U+0328) [code: spacing-mark-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
@@ -1058,6 +718,8 @@ logicalnot
 	* Adieresis (U+00C4): L<<506.0,211.0>--<399.0,211.0>> -> L<<399.0,211.0>--<291.0,211.0>>
 
 	* Agrave (U+00C0): L<<506.0,211.0>--<399.0,211.0>> -> L<<399.0,211.0>--<291.0,211.0>>
+
+	* Amacron (U+0100): L<<506.0,211.0>--<399.0,211.0>> -> L<<399.0,211.0>--<291.0,211.0>>
 
 	* Aogonek (U+0104): L<<506.0,211.0>--<399.0,211.0>> -> L<<399.0,211.0>--<291.0,211.0>>
 
@@ -1084,6 +746,10 @@ logicalnot
 	* g (U+0067): L<<348.0,123.0>--<373.0,223.0>> -> L<<373.0,223.0>--<398.0,323.0>>
 
 	* gbreve (U+011F): L<<348.0,123.0>--<373.0,223.0>> -> L<<373.0,223.0>--<398.0,323.0>>
+
+	* gcedilla (U+0123): L<<348.0,123.0>--<373.0,223.0>> -> L<<373.0,223.0>--<398.0,323.0>>
+
+	* gdotaccent (U+0121): L<<348.0,123.0>--<373.0,223.0>> -> L<<373.0,223.0>--<398.0,323.0>>
 
 	* lira (U+20A4): L<<505.0,356.0>--<457.0,356.0>> -> L<<457.0,356.0>--<409.0,356.0>>
 
@@ -1118,14 +784,24 @@ logicalnot
 	* yen (U+00A5): L<<355.0,399.0>--<277.0,399.0>> -> L<<277.0,399.0>--<198.0,399.0>>
 
 	* yen (U+00A5): L<<449.0,436.0>--<506.0,436.0>> -> L<<506.0,436.0>--<564.0,436.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
+
+
+* ⚠ **WARN** The dot of soft dotted characters used in orthographies _must_ disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+
+The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
+
+Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+
+Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | ☠ FATAL | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 22 | 246 | 13 | 207 |
-| 0% | 0% | 1% | 4% | 50% | 3% | 42% |
+| 0 | 0 | 4 | 26 | 244 | 13 | 205 |
+| 0% | 0% | 1% | 5% | 50% | 3% | 42% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
