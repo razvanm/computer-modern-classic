@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="kcedilla" format="2">
+  <advance width="459"/>
+  <unicode hex="0137"/>
+  <outline>
+    <component base="uni0327" xOffset="90.9719" yOffset="-0.687813"/>
+    <component base="k"/>
+  </outline>
+</glyph>

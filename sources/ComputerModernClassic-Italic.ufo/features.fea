@@ -1,4 +1,5 @@
 languagesystem DFLT dflt;
+languagesystem latn dflt;
 
 
 # GSUB 
@@ -32,6 +33,128 @@ feature liga {
 
 # GPOS 
 
+
+lookup mark {
+  lookupflag 0;
+  markClass [\uni0327 ] <anchor 192 -10> @BottomAnchor;
+  markClass [\uni0328 ] <anchor 110 0> @BottomAnchor;
+  markClass [\uni0326 ] <anchor 149 170> @BottomAnchor;
+  markClass [\gravecomb ] <anchor 351 392> @TopAnchor;
+  markClass [\acutecomb ] <anchor 442 392> @TopAnchor;
+  markClass [\uni0302 ] <anchor 353 367> @TopAnchor;
+  markClass [\tildecomb ] <anchor 410 463> @TopAnchor;
+  markClass [\uni0304 ] <anchor 419 537> @TopAnchor;
+  markClass [\uni0306 ] <anchor 410 397> @TopAnchor;
+  markClass [\uni0307 ] <anchor 317 449> @TopAnchor;
+  markClass [\uni0308 ] <anchor 404 439> @TopAnchor;
+  markClass [\uni030A ] <anchor 549 387> @TopAnchor;
+  markClass [\uni030B ] <anchor 442 392> @TopAnchor;
+  markClass [\uni030C ] <anchor 386 376> @TopAnchor;
+  pos base [\A ] <anchor 376 716> mark @TopAnchor
+	<anchor 376 0> mark @BottomAnchor;
+  pos base [\B ] <anchor 394 683> mark @TopAnchor
+	<anchor 394 1> mark @BottomAnchor;
+  pos base [\C ] <anchor 481 705> mark @TopAnchor
+	<anchor 481 -22> mark @BottomAnchor;
+  pos base [\D ] <anchor 414 683> mark @TopAnchor
+	<anchor 414 0> mark @BottomAnchor;
+  pos base [\E ] <anchor 397 680> mark @TopAnchor
+	<anchor 397 0> mark @BottomAnchor;
+  pos base [\F ] <anchor 391 680> mark @TopAnchor
+	<anchor 391 0> mark @BottomAnchor;
+  pos base [\G ] <anchor 481 705> mark @TopAnchor
+	<anchor 481 -22> mark @BottomAnchor;
+  pos base [\H ] <anchor 456 683> mark @TopAnchor
+	<anchor 456 0> mark @BottomAnchor;
+  pos base [\I ] <anchor 277 683> mark @TopAnchor
+	<anchor 277 0> mark @BottomAnchor;
+  pos base [\J ] <anchor 350 683> mark @TopAnchor
+	<anchor 350 -22> mark @BottomAnchor;
+  pos base [\K ] <anchor 456 683> mark @TopAnchor
+	<anchor 456 -0> mark @BottomAnchor;
+  pos base [\L ] <anchor 340 683> mark @TopAnchor
+	<anchor 340 0> mark @BottomAnchor;
+  pos base [\M ] <anchor 532 683> mark @TopAnchor
+	<anchor 532 0> mark @BottomAnchor;
+  pos base [\N ] <anchor 456 683> mark @TopAnchor
+	<anchor 456 0> mark @BottomAnchor;
+  pos base [\O ] <anchor 468 705> mark @TopAnchor
+	<anchor 468 -22> mark @BottomAnchor;
+  pos base [\P ] <anchor 391 683> mark @TopAnchor
+	<anchor 391 0> mark @BottomAnchor;
+  pos base [\Q ] <anchor 468 705> mark @TopAnchor
+	<anchor 468 -194> mark @BottomAnchor;
+  pos base [\R ] <anchor 388 683> mark @TopAnchor
+	<anchor 388 -22> mark @BottomAnchor;
+  pos base [\S ] <anchor 353 705> mark @TopAnchor
+	<anchor 353 -22> mark @BottomAnchor;
+  pos base [\T ] <anchor 488 677> mark @TopAnchor
+	<anchor 488 0> mark @BottomAnchor;
+  pos base [\U ] <anchor 526 683> mark @TopAnchor
+	<anchor 526 -22> mark @BottomAnchor;
+  pos base [\V ] <anchor 536 683> mark @TopAnchor
+	<anchor 536 -22> mark @BottomAnchor;
+  pos base [\W ] <anchor 664 683> mark @TopAnchor
+	<anchor 664 -22> mark @BottomAnchor;
+  pos base [\X ] <anchor 437 683> mark @TopAnchor
+	<anchor 437 0> mark @BottomAnchor;
+  pos base [\Y ] <anchor 536 683> mark @TopAnchor
+	<anchor 536 0> mark @BottomAnchor;
+  pos base [\Z ] <anchor 391 683> mark @TopAnchor
+	<anchor 391 0> mark @BottomAnchor;
+  pos base [\a ] <anchor 321 441> mark @TopAnchor
+	<anchor 321 -11> mark @BottomAnchor;
+  pos base [\b ] <anchor 287 694> mark @TopAnchor
+	<anchor 287 -11> mark @BottomAnchor;
+  pos base [\c ] <anchor 285 441> mark @TopAnchor
+	<anchor 285 -11> mark @BottomAnchor;
+  pos base [\d ] <anchor 334 694> mark @TopAnchor
+	<anchor 334 -11> mark @BottomAnchor;
+  pos base [\e ] <anchor 287 442> mark @TopAnchor
+	<anchor 287 -11> mark @BottomAnchor;
+  pos base [\f ] <anchor 212 705> mark @TopAnchor
+	<anchor 212 -205> mark @BottomAnchor;
+  pos base [\g ] <anchor 269 441> mark @TopAnchor
+	<anchor 269 -205> mark @BottomAnchor;
+  pos base [\h ] <anchor 305 694> mark @TopAnchor
+	<anchor 305 -11> mark @BottomAnchor;
+  pos base [\i ] <anchor 206 656> mark @TopAnchor
+	<anchor 206 -10> mark @BottomAnchor;
+  pos base [\j ] <anchor 164 656> mark @TopAnchor
+	<anchor 164 -205> mark @BottomAnchor;
+  pos base [\k ] <anchor 283 694> mark @TopAnchor
+	<anchor 283 -11> mark @BottomAnchor;
+  pos base [\l ] <anchor 199 694> mark @TopAnchor
+	<anchor 199 -11> mark @BottomAnchor;
+  pos base [\m ] <anchor 462 441> mark @TopAnchor
+	<anchor 462 -11> mark @BottomAnchor;
+  pos base [\n ] <anchor 334 441> mark @TopAnchor
+	<anchor 334 -11> mark @BottomAnchor;
+  pos base [\o ] <anchor 308 441> mark @TopAnchor
+	<anchor 308 -10> mark @BottomAnchor;
+  pos base [\p ] <anchor 261 441> mark @TopAnchor
+	<anchor 261 -194> mark @BottomAnchor;
+  pos base [\q ] <anchor 302 441> mark @TopAnchor
+	<anchor 302 -194> mark @BottomAnchor;
+  pos base [\r ] <anchor 279 441> mark @TopAnchor
+	<anchor 279 -11> mark @BottomAnchor;
+  pos base [\s ] <anchor 246 442> mark @TopAnchor
+	<anchor 246 -10> mark @BottomAnchor;
+  pos base [\t ] <anchor 229 626> mark @TopAnchor
+	<anchor 229 -11> mark @BottomAnchor;
+  pos base [\u ] <anchor 321 441> mark @TopAnchor
+	<anchor 321 -11> mark @BottomAnchor;
+  pos base [\v ] <anchor 283 442> mark @TopAnchor
+	<anchor 283 -10> mark @BottomAnchor;
+  pos base [\w ] <anchor 385 442> mark @TopAnchor
+	<anchor 385 -10> mark @BottomAnchor;
+  pos base [\x ] <anchor 285 441> mark @TopAnchor
+	<anchor 285 -11> mark @BottomAnchor;
+  pos base [\y ] <anchor 298 441> mark @TopAnchor
+	<anchor 298 -205> mark @BottomAnchor;
+  pos base [\z ] <anchor 259 442> mark @TopAnchor
+	<anchor 259 -11> mark @BottomAnchor;
+} mark;
 
 lookup kernHorizontalKerninglookup0 {
   lookupflag 0;
@@ -2441,6 +2564,13 @@ lookup kernHorizontalKerninglookup0 {
     pos \thorn \e -51;
 } kernHorizontalKerninglookup0;
 
+feature mark {
+
+ script latn;
+     language dflt ;
+      lookup mark;
+} mark;
+
 feature kern {
 
  script DFLT;
@@ -2488,13 +2618,21 @@ feature size {
 	\brokenbar \copyright \ordfeminine \copyleft \logicalnot \uni2117 \registered 
 	\degree \plusminus \twosuperior \threesuperior \uni00B5 \paragraph 
 	\periodcentered \uni203B \onesuperior \ordmasculine \radical \onequarter 
-	\onehalf \threequarters \multiply \divide \space \uni00A0 \ellipsis \Euro ];
+	\onehalf \threequarters \multiply \divide \space \uni00A0 \ellipsis \Euro 
+	\Amacron \amacron \Emacron \emacron \Imacron \imacron \Umacron \umacron 
+	\Gcedilla \gcedilla \Kcedilla \kcedilla \Lcedilla \lcedilla \Ncedilla \ncedilla 
+	\Cdotaccent \cdotaccent \Edotaccent \edotaccent \Gdotaccent \gdotaccent 
+	\Wgrave \wgrave \Ygrave \ygrave \Wcircumflex \wcircumflex \Ycircumflex 
+	\ycircumflex \Iogonek \iogonek \Uogonek \uogonek \Scomma \scomma \Tcomma \tcomma 
+	\Wacute \wacute \Wdieresis \wdieresis ];
 @GDEF_Ligature = [\quotedblleft \quotedblright \quotedblbase \guillemotleft 
 	\guillemotright \endash \emdash \ff \fi \fl \ffi \ffl \hyphen.char \exclamdown 
 	\questiondown ];
+@GDEF_Mark = [\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0306 \uni0307 
+	\uni0308 \uni030A \uni030B \uni030C \uni0327 \uni0328 \uni0326 ];
 
 table GDEF {
-  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, , ;
+  GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
 
 } GDEF;
 

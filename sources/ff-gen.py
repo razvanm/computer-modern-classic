@@ -93,4 +93,133 @@ EURO_NAME_UNICODE = (
 eurorm = load(euro_font_gf, euro_font_tfm, EURO_NAME_UNICODE)
 copy_glyph(eurorm[0x45], eurorm, f)
 
-f.generate(ufo_file)
+
+# Add the combining glpyhs required by GF Latin Core.
+
+gravecomb = 0x0300
+acutecomb = 0x0301
+circumflexcomb = 0x0302
+tildecomb = 0x0303
+macroncomb = 0x0304
+brevecomb = 0x0306
+dotaccentcomb = 0x0307
+dieresiscomb = 0x0308
+ringcomb = 0x030A
+hungarumlautcomb = 0x030B
+caroncomb = 0x030C
+# Bottom accents.
+commacomb = 0x0326
+cedillacomb = 0x0327
+ogonekcomb = 0x0328
+
+f.addLookup('mark', 'gpos_mark2base', None, (('mark',(('latn',('dflt')),)),))
+f.addLookupSubtable('mark', 'markSubtable')
+# TopAnchor is used to accents on top of the glyphs.
+f.addAnchorClass('markSubtable', 'TopAnchor')
+# BottomAnchor is used to accents on under the glyphs.
+f.addAnchorClass('markSubtable', 'BottomAnchor')
+
+def create_combining(src_glyphname, dest_unicode):
+    dest_glyphname = fontforge.nameFromUnicode(dest_unicode)
+    print("Copying %s to %s ..." % (src_glyphname, dest_glyphname))
+    f.selection.select(src_glyphname)
+    f.copy()
+    g = f.createChar(dest_unicode, dest_glyphname)
+    f.selection.select(g)
+    f.paste()
+    return g
+
+def top_combining(g):
+    (xmin, ymin, xmax, ymax) = g.boundingBox()
+    g.addAnchorPoint('TopAnchor' , 'mark', xmin+(xmax-xmin)/2, ymin - f.em*0.1)
+    return g
+
+def bottom_combining(g, yscale=1, yoffset=0):
+    (xmin, ymin, xmax, ymax) = g.boundingBox()
+    y = ymax * yscale + yoffset
+    g.addAnchorPoint('BottomAnchor' , 'mark', xmin+(xmax-xmin)/2, y)
+    return g
+
+top_combining(create_combining('grave', gravecomb))
+top_combining(create_combining('acute', acutecomb))
+top_combining(create_combining('circumflex', circumflexcomb))
+top_combining(create_combining('tilde', tildecomb))
+top_combining(create_combining('macron', macroncomb))
+top_combining(create_combining('breve', brevecomb))
+top_combining(create_combining('dotaccent', dotaccentcomb))
+top_combining(create_combining('dieresis', dieresiscomb))
+top_combining(create_combining('ring', ringcomb))
+top_combining(create_combining('hungarumlaut', hungarumlautcomb))
+top_combining(create_combining('caron', caroncomb))
+
+bottom_combining(create_combining('cedilla', cedillacomb), 0, -f.em*0.01)
+bottom_combining(create_combining('ogonek', ogonekcomb), 0)
+bottom_combining(create_combining('comma', commacomb), 1, f.em*0.05)
+
+for glyphname in 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ':
+    g = f[glyphname]
+    (xmin, ymin, xmax, ymax) = g.boundingBox()
+    g.addAnchorPoint('BottomAnchor', 'base', xmin+(xmax-xmin)/2, ymin)
+    g.addAnchorPoint('TopAnchor', 'base', xmin+(xmax-xmin)/2, ymax)
+
+
+# Add some missing accented glpyhs required by GF Latin Core.
+ACCENTED_GLPYHS = [
+    ('A', macroncomb, 0x0100, 'Amacron'),
+    ('a', macroncomb, 0x0101, 'amacron'),
+    ('E', macroncomb, 0x0112, 'Emacron'),
+    ('e', macroncomb, 0x0113, 'emacron'),
+    ('I', macroncomb, 0x012A, 'Imacron'),
+    ('dotlessi', macroncomb, 0x012B, 'imacron'),
+    ('U', macroncomb, 0x016A, 'Umacron'),
+    ('u', macroncomb, 0x016B, 'umacron'),
+    ('G', cedillacomb, 0x0122, 'Gcedilla'),
+    ('g', cedillacomb, 0x0123, 'gcedilla'),
+    ('K', cedillacomb, 0x0136, 'Kcedilla'),
+    ('k', cedillacomb, 0x0137, 'kcedilla'),
+    ('L', cedillacomb, 0x013B, 'Lcedilla'),
+    ('l', cedillacomb, 0x013C, 'lcedilla'),
+    ('N', cedillacomb, 0x0145, 'Ncedilla'),
+    ('n', cedillacomb, 0x0146, 'ncedilla'),
+    ('C', dotaccentcomb, 0x010A, 'Cdotaccent'),
+    ('c', dotaccentcomb, 0x010B, 'cdotaccent'),
+    ('E', dotaccentcomb, 0x0116, 'Edotaccent'),
+    ('e', dotaccentcomb, 0x0117, 'edotaccent'),
+    ('G', dotaccentcomb, 0x0120, 'Gdotaccent'),
+    ('g', dotaccentcomb, 0x0121, 'gdotaccent'),
+    ('W', gravecomb, 0x1E80, 'Wgrave'),
+    ('w', gravecomb, 0x1E81, 'wgrave'),
+    ('Y', gravecomb, 0x1EF2, 'Ygrave'),
+    ('y', gravecomb, 0x1EF3, 'ygrave'),
+    ('W', circumflexcomb, 0x0174, 'Wcircumflex'),
+    ('w', circumflexcomb, 0x0175, 'wcircumflex'),
+    ('Y', circumflexcomb, 0x0176, 'Ycircumflex'),
+    ('y', circumflexcomb, 0x0177, 'ycircumflex'),
+    ('I', ogonekcomb, 0x012E, 'Iogonek'),
+    ('i', ogonekcomb, 0x012F, 'iogonek'),
+    ('U', ogonekcomb, 0x0172, 'Uogonek'),
+    ('u', ogonekcomb, 0x0173, 'uogonek'),
+    ('S', commacomb, 0x0218, 'Scomma'),
+    ('s', commacomb, 0x0219, 'scomma'),
+    ('T', commacomb, 0x021A, 'Tcomma'),
+    ('t', commacomb, 0x021B, 'tcomma'),
+    ('W', acutecomb, 0x1E82, 'Wacute'),
+    ('w', acutecomb, 0x1E83, 'wacute'),
+    ('W', dieresiscomb, 0x1E84, 'Wdieresis'),
+    ('w', dieresiscomb, 0x1E85, 'wdieresis'),
+
+    # TODO: there is no stroke glyph!
+    # ('D', 'stroke', 0x0110, 'Dstroke'),
+    # ('H', 'stroke', 0x0126, 'Hstroke'),
+    # ('h', 'stroke', 0x0127, 'hstroke'),
+]
+for (c, accent, uni, name) in ACCENTED_GLPYHS:
+    print('Adding %s...' % name)
+    g = f.createChar(uni, name)
+    g.addReference(c)
+    g.appendAccent(unicode=accent)
+    g.width = f[c].width
+
+
+# The 'PfEd-lookups' is required to get the mark lookup to be exported.
+f.generate(ufo_file, flags=('PfEd-lookups',))

@@ -2,6 +2,8 @@
 <glyph name="Z" format="2">
   <advance width="610"/>
   <unicode hex="005A"/>
+  <anchor x="308.056" y="682.948" name="TopAnchor"/>
+  <anchor x="308.056" y="0.144531" name="BottomAnchor"/>
   <outline>
     <contour>
       <point x="79.877" y="675.181" type="curve" smooth="yes"/>

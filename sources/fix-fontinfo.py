@@ -38,8 +38,8 @@ f.info.openTypeNameLicense = 'This Font Software is licensed under the SIL Open 
 f.info.openTypeNameLicenseURL = 'https://scripts.sil.org/OFL'
 
 # Fix for FontBakery:com.google.fonts/check/family/win_ascent_and_descent.
-f.info.openTypeOS2WinAscent = 931
-f.info.openTypeOS2WinDescent = 288
+f.info.openTypeOS2WinAscent = 969
+f.info.openTypeOS2WinDescent = 419
 
 # Fix for com.FontBakery:com.google.fonts/check/vertical_metrics.
 # Reference: https://googlefonts.github.io/gf-guide/metrics.html
