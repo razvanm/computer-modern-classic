@@ -5,8 +5,8 @@ UFO_DIRS = \
 all: $(UFO_DIRS)
 
 REGULAR_FILES = \
-	testfont/ecrm10.gf testfont/ecrm10.tfm \
-	testfont/tcrm10.gf testfont/tcrm10.tfm \
+	ec/ecrm10.gf ec/ecrm10.tfm \
+	ec/tcrm10.gf ec/tcrm10.tfm \
 	testfont/eurorm.gf testfont/eurorm.tfm
 
 ComputerModernClassic-Regular.ufo: ff-gen.py fix-fontinfo.py $(REGULAR_FILES)
@@ -14,8 +14,8 @@ ComputerModernClassic-Regular.ufo: ff-gen.py fix-fontinfo.py $(REGULAR_FILES)
 	./fix-fontinfo.py $@
 
 ITALIC_FILES = \
-	  testfont/ecti10.gf testfont/ecti10.tfm \
-	  testfont/tcti10.gf testfont/tcti10.tfm \
+	  ec/ecti10.gf ec/ecti10.tfm \
+	  ec/tcti10.gf ec/tcti10.tfm \
 	  testfont/euroit.gf testfont/euroit.tfm
 
 ComputerModernClassic-Italic.ufo: ff-gen.py fix-fontinfo.py $(ITALIC_FILES)

@@ -35,6 +35,10 @@ else:                      % roman
  input txrfract;           % fractions 1/4, 1/2, 3/4
 fi;
 
+% Some extra glyphs added to Computer Modern Classic to complete the
+% GF Latin Core.
+input "computer-modern-classic"
+
 % Ligtable
 
 if not monospace:

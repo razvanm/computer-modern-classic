@@ -2618,13 +2618,13 @@ feature size {
 	\brokenbar \copyright \ordfeminine \copyleft \logicalnot \uni2117 \registered 
 	\degree \plusminus \twosuperior \threesuperior \uni00B5 \paragraph 
 	\periodcentered \uni203B \onesuperior \ordmasculine \radical \onequarter 
-	\onehalf \threequarters \multiply \divide \space \uni00A0 \ellipsis \Euro 
-	\Amacron \amacron \Emacron \emacron \Imacron \imacron \Umacron \umacron 
-	\Gcedilla \gcedilla \Kcedilla \kcedilla \Lcedilla \lcedilla \Ncedilla \ncedilla 
-	\Cdotaccent \cdotaccent \Edotaccent \edotaccent \Gdotaccent \gdotaccent 
-	\Wgrave \wgrave \Ygrave \ygrave \Wcircumflex \wcircumflex \Ycircumflex 
-	\ycircumflex \Iogonek \iogonek \Uogonek \uogonek \Scomma \scomma \Tcomma \tcomma 
-	\Wacute \wacute \Wdieresis \wdieresis ];
+	\onehalf \threequarters \multiply \divide \uni0110 \uni0126 \uni0127 \space 
+	\uni00A0 \ellipsis \Euro \Amacron \amacron \Emacron \emacron \Imacron \imacron 
+	\Umacron \umacron \Gcedilla \gcedilla \Kcedilla \kcedilla \Lcedilla \lcedilla 
+	\Ncedilla \ncedilla \Cdotaccent \cdotaccent \Edotaccent \edotaccent 
+	\Gdotaccent \gdotaccent \Wgrave \wgrave \Ygrave \ygrave \Wcircumflex 
+	\wcircumflex \Ycircumflex \ycircumflex \Iogonek \iogonek \Uogonek \uogonek 
+	\Scomma \scomma \Tcomma \tcomma \Wacute \wacute \Wdieresis \wdieresis ];
 @GDEF_Ligature = [\quotedblleft \quotedblright \quotedblbase \guillemotleft 
 	\guillemotright \endash \emdash \ff \fi \fl \ffi \ffl \hyphen.char \exclamdown 
 	\questiondown ];
