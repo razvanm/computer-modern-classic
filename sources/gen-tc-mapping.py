@@ -22,11 +22,21 @@ AGL_MISSING = {
     'leaf': -1,
 }
 
+# Some characters added to TC specifically for Computer Modern Classic.
+EXTRA = {
+    0xFD: 0x0110, # LATIN CAPITAL LETTER H WITH STROKE
+    0xFE: 0x0126, # LATIN CAPITAL LETTER H WITH STROKE
+    0xFF: 0x0127, # LATIN SMALL LETTER H WITH STROKE
+}
+
 print('TC_NAME_UNICODE = [', end='')
 for i in range(len(GLYPHS)):
     name = GLYPHS[i]
     uni = -1
-    if name in SKIP or name in INCORRECT:
+    if i in EXTRA:
+        name = 'uni%04X' % EXTRA[i]
+        uni = EXTRA[i]
+    elif name in SKIP or name in INCORRECT:
         name = '.notdef'
     elif name.endswith('.ts1'):
         name = '.notdef'
