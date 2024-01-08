@@ -62,16 +62,16 @@ fontbakery version: 0.10.8
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
- * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
- * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
- * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
- * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, malayalam, tai-le, math, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, coptic, canadian-aboriginal, malayalam, old-permic, tai-le, math
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
@@ -96,24 +96,24 @@ fontbakery version: 0.10.8
  * U+2126 OHM SIGN: not included in any glyphset definition
  * U+2127 INVERTED OHM SIGN: not included in any glyphset definition
  * U+212E ESTIMATED SYMBOL: not included in any glyphset definition
- * U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
- * U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+ * U+2190 LEFTWARDS ARROW: try adding one of: symbols, math
+ * U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math
  * U+2217 ASTERISK OPERATOR: try adding math
  * U+221A SQUARE ROOT: try adding math
- * U+22C6 STAR OPERATOR: try adding one of: math, symbols
+ * U+22C6 STAR OPERATOR: try adding one of: symbols, math
  * U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols
  * U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols
  * U+2422 BLANK SYMBOL: try adding symbols
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: symbols, emoji
+ * U+271D LATIN CROSS: try adding one of: emoji, symbols
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
@@ -444,7 +444,7 @@ The dot of soft dotted characters _should_ disappear in other cases, for example
 
 Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
 </div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
@@ -467,16 +467,16 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, canadian-aboriginal, yi
- * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
- * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
- * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+ * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+ * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
+ * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
- * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, old-permic, coptic, syriac, malayalam, tai-le, math, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, tifinagh, coptic, canadian-aboriginal, malayalam, old-permic, tai-le, math
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
@@ -501,24 +501,24 @@ Your font does *not* cover the following languages that require the soft-dotted 
  * U+2126 OHM SIGN: not included in any glyphset definition
  * U+2127 INVERTED OHM SIGN: not included in any glyphset definition
  * U+212E ESTIMATED SYMBOL: not included in any glyphset definition
- * U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
- * U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+ * U+2190 LEFTWARDS ARROW: try adding one of: symbols, math
+ * U+2192 RIGHTWARDS ARROW: try adding one of: symbols, math
  * U+2217 ASTERISK OPERATOR: try adding math
  * U+221A SQUARE ROOT: try adding math
- * U+22C6 STAR OPERATOR: try adding one of: math, symbols
+ * U+22C6 STAR OPERATOR: try adding one of: symbols, math
  * U+2329 LEFT-POINTING ANGLE BRACKET: try adding symbols
  * U+232A RIGHT-POINTING ANGLE BRACKET: try adding symbols
  * U+2422 BLANK SYMBOL: try adding symbols
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: symbols, emoji
+ * U+271D LATIN CROSS: try adding one of: emoji, symbols
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
@@ -793,7 +793,7 @@ The dot of soft dotted characters _should_ disappear in other cases, for example
 
 Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers), Belarusian (Cyrl, 10,064,517 speakers), Ukrainian (Cyrl, 29,273,587 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
