@@ -9,8 +9,6 @@ fontbakery version: 0.10.8
 
 | Language | FAIL messages |
 | :--- | :--- |
-| mt_Latn (Maltese) | Some base glyphs were missing: għ, ħ |
-|  ^  | Shaper produced a .notdef |
 | ro_Latn (Romanian) | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+555 |
 
  [code: failed-language-shaping]
@@ -28,8 +26,6 @@ fontbakery version: 0.10.8
 
 | Language | FAIL messages |
 | :--- | :--- |
-| mt_Latn (Maltese) | Some base glyphs were missing: għ, ħ |
-|  ^  | Shaper produced a .notdef |
 | ro_Latn (Romanian) | in Romanian, S-cedilla should become S-comma-accent; both buffers returned Scedilla=0+562 |
 
  [code: failed-language-shaping]
@@ -40,20 +36,7 @@ fontbakery version: 0.10.8
 | nb_Latn (Norwegian Bokmål) | No exemplar glyphs were defined for language Norwegian Bokmål |
 
  [code: warning-language-shaping]
-</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x0110 (LATIN CAPITAL LETTER D WITH STROKE)
-
-
-	- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
-
-
-	- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
- [code: missing-codepoints]
-</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[13] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
 * ⚠ **WARN** The following codepoints supported by the font are not covered by
@@ -62,17 +45,17 @@ fontbakery version: 0.10.8
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee
- * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, old-permic, syriac, math, coptic, malayalam, canadian-aboriginal, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: math, old-permic, canadian-aboriginal, coptic, syriac, tifinagh, malayalam, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
@@ -107,13 +90,13 @@ fontbakery version: 0.10.8
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: symbols, music
+ * U+266A EIGHTH NOTE: try adding one of: music, symbols
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
  * U+271D LATIN CROSS: try adding one of: emoji, symbols
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
@@ -216,6 +199,8 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: threesuperior	Contours detected: 2	Expected: 1
 
 	- Glyph name: onesuperior	Contours detected: 2	Expected: 1
+
+	- Glyph name: uni0126	Contours detected: 1	Expected: 2
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
@@ -404,6 +389,12 @@ logicalnot
 
 	* uni00B5 (U+00B5): L<<186.0,442.0>--<187.0,263.0>>
 
+	* uni0110 (U+0110): L<<230.0,481.0>--<231.0,270.0>>
+
+	* uni0126 (U+0126): L<<128.0,276.0>--<129.0,491.0>>
+
+	* uni0127 (U+0127): L<<102.0,289.0>--<103.0,517.0>>
+
 	* uni2045 (U+2045): L<<153.0,495.0>--<154.0,366.0>>
 
 	* uni2045 (U+2045): L<<154.0,134.0>--<153.0,6.0>>
@@ -442,23 +433,10 @@ logicalnot
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
 
-Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Belarusian (Cyrl, 10,064,517 speakers), Igbo (Latn, 27,823,640 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x0110 (LATIN CAPITAL LETTER D WITH STROKE)
-
-
-	- 0x0126 (LATIN CAPITAL LETTER H WITH STROKE)
-
-
-	- 0x0127 (LATIN SMALL LETTER H WITH STROKE)
- [code: missing-codepoints]
-</div></details><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[13] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
 * ⚠ **WARN** The following codepoints supported by the font are not covered by
@@ -467,17 +445,17 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: tifinagh, yi, canadian-aboriginal
- * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
- * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
- * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: canadian-aboriginal, yi, tifinagh
+ * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
+ * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi
+ * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, tifinagh, cherokee
- * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
- * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, old-permic, syriac, math, coptic, malayalam, canadian-aboriginal, tifinagh
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh
+ * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
+ * U+0307 COMBINING DOT ABOVE: try adding one of: math, old-permic, canadian-aboriginal, coptic, syriac, tifinagh, malayalam, tai-le
  * U+030A COMBINING RING ABOVE: try adding syriac
- * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
- * U+030C COMBINING CARON: try adding one of: tai-le, cherokee
+ * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+ * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
  * U+0326 COMBINING COMMA BELOW: not included in any glyphset definition
  * U+0327 COMBINING CEDILLA: not included in any glyphset definition
  * U+0328 COMBINING OGONEK: not included in any glyphset definition
@@ -512,13 +490,13 @@ Your font does *not* cover the following languages that require the soft-dotted 
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: symbols, music
+ * U+266A EIGHTH NOTE: try adding one of: music, symbols
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
  * U+271D LATIN CROSS: try adding one of: emoji, symbols
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
- * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
- * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
+ * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
+ * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: yi, phags-pa
  * U+FB00 LATIN SMALL LIGATURE FF: not included in any glyphset definition
  * U+FB01 LATIN SMALL LIGATURE FI: not included in any glyphset definition
  * U+FB02 LATIN SMALL LIGATURE FL: not included in any glyphset definition
@@ -627,6 +605,8 @@ The following glyphs do not have the recommended number of contours:
 	- Glyph name: onehalf	Contours detected: 4	Expected: 3
 
 	- Glyph name: threequarters	Contours detected: 5	Expected: 3 or 4
+
+	- Glyph name: uni0126	Contours detected: 1	Expected: 2
 
 	- Glyph name: Uogonek	Contours detected: 2	Expected: 1
 
@@ -757,6 +737,8 @@ logicalnot
 
 	* plusminus (U+00B1): L<<377.0,61.0>--<408.0,184.0>> -> L<<408.0,184.0>--<438.0,307.0>>
 
+	* uni0127 (U+0127): L<<324.0,517.0>--<306.0,445.0>> -> L<<306.0,445.0>--<288.0,372.0>>
+
 	* uni0E3F (U+0E3F): L<<373.0,45.0>--<410.0,191.0>> -> L<<410.0,191.0>--<446.0,337.0>>
 
 	* uni203D (U+203D): L<<397.0,334.0>--<382.0,287.0>> -> L<<382.0,287.0>--<366.0,239.0>>
@@ -791,17 +773,17 @@ logicalnot
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
 
-Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers), Belarusian (Cyrl, 10,064,517 speakers), Igbo (Latn, 27,823,640 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Basaa (Latn, 332,940 speakers), Aghem (Latn, 38,843 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Igbo (Latn, 27,823,640 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | ☠ FATAL | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 0 | 4 | 26 | 244 | 13 | 205 |
-| 0% | 0% | 1% | 5% | 50% | 3% | 42% |
+| 0 | 0 | 2 | 26 | 244 | 13 | 207 |
+| 0% | 0% | 0% | 5% | 50% | 3% | 42% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
