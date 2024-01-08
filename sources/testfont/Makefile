@@ -17,8 +17,8 @@ gf: $(addsuffix .gf,$(FONTS))
 html: index.html
 
 # Reference for \smode: https://texfaq.org/FAQ-useMF
-%.gf: custom.mf
-	mf-nowin -interaction=nonstopmode '\smode="custom"; input $(basename $@)'
+%.gf: ../custom.mf
+	mf-nowin -interaction=nonstopmode '\smode="../custom"; input $(basename $@)'
 	ln -f -s $(basename $@).10000gf $(basename $@).gf
 
 %.pl: %.tfm
