@@ -36,7 +36,7 @@ fontbakery version: 0.10.9
 | nb_Latn (Norwegian Bokmål) | No exemplar glyphs were defined for language Norwegian Bokmål |
 
  [code: warning-language-shaping]
-</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Regular.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
 * ⚠ **WARN** The following codepoints supported by the font are not covered by
@@ -45,14 +45,14 @@ fontbakery version: 0.10.9
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh
  * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
  * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
  * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, math, cherokee
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, math, old-permic, malayalam, syriac, canadian-aboriginal, tai-le, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, malayalam, tai-le, coptic, canadian-aboriginal, tifinagh, math, old-permic
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
@@ -90,10 +90,10 @@ fontbakery version: 0.10.9
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
  * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
@@ -106,10 +106,6 @@ fontbakery version: 0.10.9
  * U+1F12F COPYLEFT SYMBOL: try adding symbols
 
 Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
-</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* ⚠ **WARN** OFL url is no longer "https://scripts.sil.org/OFL". Use 'https://openfontlicense.org' instead. [code: deprecated-ofl-url]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -260,16 +256,6 @@ logicalnot
 * ⚠ **WARN** dcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B), uni030C (U+030C), uni0326 (U+0326), uni0327 (U+0327) and uni0328 (U+0328) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 uni0361 (U+0361) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -430,6 +416,10 @@ logicalnot
 	* zdotaccent (U+017C): L<<210.0,0.0>--<35.0,1.0>>
 
 	* zdotaccent (U+017C): L<<223.0,431.0>--<392.0,430.0>> [code: found-semi-vertical]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+
+
+* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -437,10 +427,10 @@ logicalnot
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
 
-Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Ukrainian (Cyrl, 29,273,587 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
-</div></details><br></div></details><details><summary><b>[14] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
+Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
+</div></details><br></div></details><details><summary><b>[12] ComputerModernClassic-Italic.ttf</b></summary><div><details><summary>⚠ <b>WARN:</b> Check for codepoints not covered by METADATA subsets. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/unreachable_subsetting">com.google.fonts/check/metadata/unreachable_subsetting</a>)</summary><div>
 
 
 * ⚠ **WARN** The following codepoints supported by the font are not covered by
@@ -449,14 +439,14 @@ Your font does *not* cover the following languages that require the soft-dotted 
     subset declarations to METADATA.pb, or by editing the glyphset
     definitions.
 
- * U+02C7 CARON: try adding one of: yi, tifinagh, canadian-aboriginal
+ * U+02C7 CARON: try adding one of: yi, canadian-aboriginal, tifinagh
  * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
  * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
  * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
  * U+02DD DOUBLE ACUTE ACCENT: not included in any glyphset definition
- * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, coptic, math, cherokee
+ * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, cherokee, math, tifinagh
  * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic
- * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, math, old-permic, malayalam, syriac, canadian-aboriginal, tai-le, tifinagh
+ * U+0307 COMBINING DOT ABOVE: try adding one of: syriac, malayalam, tai-le, coptic, canadian-aboriginal, tifinagh, math, old-permic
  * U+030A COMBINING RING ABOVE: try adding syriac
  * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
  * U+030C COMBINING CARON: try adding one of: cherokee, tai-le
@@ -494,10 +484,10 @@ Your font does *not* cover the following languages that require the soft-dotted 
  * U+2423 OPEN BOX: try adding symbols
  * U+25CB WHITE CIRCLE: try adding symbols
  * U+25E6 WHITE BULLET: try adding symbols
- * U+266A EIGHTH NOTE: try adding one of: music, symbols
+ * U+266A EIGHTH NOTE: try adding one of: symbols, music
  * U+26AD MARRIAGE SYMBOL: try adding symbols
  * U+26AE DIVORCE SYMBOL: try adding symbols
- * U+271D LATIN CROSS: try adding one of: emoji, symbols
+ * U+271D LATIN CROSS: try adding one of: symbols, emoji
  * U+2E18 INVERTED INTERROBANG: not included in any glyphset definition
  * U+301A LEFT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
  * U+301B RIGHT WHITE SQUARE BRACKET: try adding one of: phags-pa, yi
@@ -510,10 +500,6 @@ Your font does *not* cover the following languages that require the soft-dotted 
  * U+1F12F COPYLEFT SYMBOL: try adding symbols
 
 Or you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext` [code: unreachable-subsetting]
-</div></details><details><summary>⚠ <b>WARN:</b> License URL matches License text on name table? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license_url">com.google.fonts/check/name/license_url</a>)</summary><div>
-
-
-* ⚠ **WARN** OFL url is no longer "https://scripts.sil.org/OFL". Use 'https://openfontlicense.org' instead. [code: deprecated-ofl-url]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there caret positions declared for every ligature? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/ligature_carets">com.google.fonts/check/ligature_carets</a>)</summary><div>
 
 
@@ -680,16 +666,6 @@ logicalnot
 * ⚠ **WARN** dcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** lcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
 * ⚠ **WARN** tcaron is decomposed and therefore could not be checked. Please check manually. [code: decomposed-outline]
-</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
-
-
-* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
-	 acutecomb (U+0301), gravecomb (U+0300), tildecomb (U+0303), uni0302 (U+0302), uni0304 (U+0304), uni0306 (U+0306), uni0307 (U+0307), uni0308 (U+0308), uni030A (U+030A), uni030B (U+030B), uni030C (U+030C), uni0326 (U+0326), uni0327 (U+0327) and uni0328 (U+0328) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 uni0361 (U+0361) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do any segments have colinear vectors? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_colinear_vectors">com.google.fonts/check/outline_colinear_vectors</a>)</summary><div>
 
 
@@ -774,6 +750,10 @@ logicalnot
 	* yen (U+00A5): L<<355.0,399.0>--<277.0,399.0>> -> L<<277.0,399.0>--<198.0,399.0>>
 
 	* yen (U+00A5): L<<449.0,436.0>--<506.0,436.0>> -> L<<506.0,436.0>--<564.0,436.0>> [code: found-colinear-vectors]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+
+
+* ⚠ **WARN** No dotted circle glyph present [code: missing-dotted-circle]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
@@ -781,17 +761,17 @@ logicalnot
 
 The dot of soft dotted characters _should_ disappear in other cases, for example: ĩ ĭ i̇ ǐ ĩ̦ ĭ̦ i̦̇ i̦̊ i̦̋ ǐ̦ ĩ̧ ĭ̧ i̧̇ i̧̊ i̧̋ ǐ̧ ĵ j̆ j̇ j̊
 
-Your font fully covers the following languages that require the soft-dotted feature: Lithuanian (Latn, 2,357,094 speakers), Dutch (Latn, 31,709,104 speakers). 
+Your font fully covers the following languages that require the soft-dotted feature: Dutch (Latn, 31,709,104 speakers), Lithuanian (Latn, 2,357,094 speakers). 
 
-Your font does *not* cover the following languages that require the soft-dotted feature: Ukrainian (Cyrl, 29,273,587 speakers), Navajo (Latn, 166,319 speakers), Aghem (Latn, 38,843 speakers), Belarusian (Cyrl, 10,064,517 speakers), Igbo (Latn, 27,823,640 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
+Your font does *not* cover the following languages that require the soft-dotted feature: Aghem (Latn, 38,843 speakers), Igbo (Latn, 27,823,640 speakers), Belarusian (Cyrl, 10,064,517 speakers), Navajo (Latn, 166,319 speakers), Ukrainian (Cyrl, 29,273,587 speakers), Basaa (Latn, 332,940 speakers). [code: soft-dotted]
 </div></details><br></div></details>
 
 ### Summary
 
 | 💔 ERROR | ☠ FATAL | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
-| 0 | 0 | 2 | 28 | 246 | 13 | 205 | 0 |
-| 0% | 0% | 0% | 6% | 50% | 3% | 41% | 0% |
+| 0 | 0 | 2 | 24 | 244 | 13 | 211 | 0 |
+| 0% | 0% | 0% | 5% | 49% | 3% | 43% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
