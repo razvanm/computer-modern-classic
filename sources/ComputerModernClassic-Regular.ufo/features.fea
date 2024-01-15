@@ -2148,7 +2148,7 @@ feature size {
 	\egrave \eacute \ecircumflex \edieresis \igrave \iacute \icircumflex \idieresis 
 	\eth \ntilde \ograve \oacute \ocircumflex \otilde \odieresis \oe \oslash \ugrave 
 	\uacute \ucircumflex \udieresis \yacute \thorn \germandbls \arrowleft 
-	\arrowright \uni0361.alt \uni0361 \uni2040.alt \uni2040 \uni2422 \quotesingle 
+	\arrowright \uni0361.alt \uni2040.alt \uni2040 \uni2422 \quotesingle 
 	\asteriskmath \uniFE66 \fraction \zerooldstyle \oneoldstyle \twooldstyle 
 	\threeoldstyle \fouroldstyle \fiveoldstyle \sixoldstyle \sevenoldstyle 
 	\eightoldstyle \nineoldstyle \angleleft \minus \angleright \uni2127 \circle 
@@ -2170,8 +2170,8 @@ feature size {
 @GDEF_Ligature = [\quotedblleft \quotedblright \quotedblbase \guillemotleft 
 	\guillemotright \endash \emdash \ff \fi \fl \ffi \ffl \hyphen.char \exclamdown 
 	\questiondown ];
-@GDEF_Mark = [\gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0306 \uni0307 
-	\uni0308 \uni030A \uni030B \uni030C \uni0327 \uni0328 \uni0326 ];
+@GDEF_Mark = [\uni0361 \gravecomb \acutecomb \uni0302 \tildecomb \uni0304 \uni0306 
+	\uni0307 \uni0308 \uni030A \uni030B \uni030C \uni0327 \uni0328 \uni0326 ];
 
 table GDEF {
   GlyphClassDef @GDEF_Simple, @GDEF_Ligature, @GDEF_Mark, ;
