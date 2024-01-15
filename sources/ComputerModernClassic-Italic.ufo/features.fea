@@ -1,9 +1,18 @@
 languagesystem DFLT dflt;
 languagesystem latn dflt;
+languagesystem latn ROM ;
 
 
 # GSUB 
 
+
+lookup loclRomanian {
+  lookupflag 0;
+    sub \Scedilla by \Scomma ;
+    sub \Tcedilla by \Tcomma ;
+    sub \scedilla by \scomma ;
+    sub \tcedilla by \tcomma ;
+} loclRomanian;
 
 lookup ligaStandardLigatureslookup0 {
   lookupflag 0;
@@ -23,6 +32,13 @@ lookup ligaStandardLigatureslookup0 {
     sub \exclam \quoteleft  by \exclamdown;
     sub \question \quoteleft  by \questiondown;
 } ligaStandardLigatureslookup0;
+
+feature locl {
+
+ script latn;
+     language ROM  exclude_dflt;
+      lookup loclRomanian;
+} locl;
 
 feature liga {
 
