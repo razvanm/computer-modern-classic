@@ -229,5 +229,15 @@ f['uni0361'].glyphclass = 'mark'
 # width for marks.
 f['uni0361'].width = 0
 
+# Fix the FontBakery:com.google.fonts/check/glyphsets/shape_languages
+# related to Romanian.
+f.addLookup('loclRomanian', 'gsub_single', None, (('locl',(('latn',('ROM')),)),))
+f.addLookupSubtable('loclRomanian', 'loclRomanianSubtable')
+f['scedilla'].addPosSub('loclRomanianSubtable', 'scomma')
+f['Scedilla'].addPosSub('loclRomanianSubtable', 'Scomma')
+f['tcedilla'].addPosSub('loclRomanianSubtable', 'tcomma')
+f['Tcedilla'].addPosSub('loclRomanianSubtable', 'Tcomma')
+
+
 # The 'PfEd-lookups' is required to get the mark lookup to be exported.
 f.generate(ufo_file, flags=('PfEd-lookups',))
