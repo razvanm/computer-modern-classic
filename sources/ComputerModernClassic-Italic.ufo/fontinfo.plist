@@ -15,9 +15,9 @@
     <key>italicAngle</key>
     <real>-14.0</real>
     <key>note</key>
-    <string>2024-1-7: Created with FontForge (http://fontforge.org)</string>
+    <string>2024-1-15: Created with FontForge (http://fontforge.org)</string>
     <key>openTypeHeadCreated</key>
-    <string>2024/01/08 04:33:10</string>
+    <string>2024/01/15 20:47:50</string>
     <key>openTypeHheaAscender</key>
     <integer>900</integer>
     <key>openTypeHheaDescender</key>
@@ -27,7 +27,7 @@
     <key>openTypeNameLicense</key>
     <string>This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL</string>
     <key>openTypeNameLicenseURL</key>
-    <string>https://scripts.sil.org/OFL</string>
+    <string>https://openfontlicense.org</string>
     <key>openTypeNameVersion</key>
     <string>Version 1.000</string>
     <key>openTypeOS2Selection</key>

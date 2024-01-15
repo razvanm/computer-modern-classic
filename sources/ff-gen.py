@@ -127,6 +127,9 @@ def create_combining(src_glyphname, dest_unicode):
     g = f.createChar(dest_unicode, dest_glyphname)
     f.selection.select(g)
     f.paste()
+    # FontBakery:com.google.fonts/check/gdef_spacing_marks wants zero
+    # width for marks.
+    g.width = 0
     return g
 
 def top_combining(g):
@@ -220,6 +223,11 @@ for (c, accent, uni, name) in ACCENTED_GLPYHS:
     g.appendAccent(unicode=accent)
     g.width = f[c].width
 
+# Fix for FontBakery:com.google.fonts/check/gdef_mark_chars.
+f['uni0361'].glyphclass = 'mark'
+# FontBakery:com.google.fonts/check/gdef_spacing_marks wants zero
+# width for marks.
+f['uni0361'].width = 0
 
 # The 'PfEd-lookups' is required to get the mark lookup to be exported.
 f.generate(ufo_file, flags=('PfEd-lookups',))
