@@ -35,7 +35,7 @@ f.info.openTypeOS2Selection = [7]
 
 # Fix for FontBakery:com.google.fonts/check/name/license.
 f.info.openTypeNameLicense = 'This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL'
-f.info.openTypeNameLicenseURL = 'https://scripts.sil.org/OFL'
+f.info.openTypeNameLicenseURL = 'https://openfontlicense.org'
 
 # Fix for FontBakery:com.google.fonts/check/family/win_ascent_and_descent.
 f.info.openTypeOS2WinAscent = 969
