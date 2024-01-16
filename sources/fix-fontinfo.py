@@ -2,6 +2,7 @@
 
 import defcon
 import sys
+from fontTools.misc import plistlib
 
 f = defcon.Font(sys.argv[1])
 italic = 'Italic' in sys.argv[1]
@@ -53,3 +54,15 @@ f.info.openTypeOS2TypoAscender = f.info.openTypeHheaAscender
 f.info.openTypeOS2TypoDescender = f.info.openTypeHheaDescender
 
 f.save(sys.argv[1])
+
+# Manually create a lib.plist to populate the OpenType meta table
+# because the defcon library doesn't have yet support for it.
+#
+# This fixes the FontBakery:com.google.fonts/check/meta/script_lang_tags check.
+with open(sys.argv[1] + '/lib.plist', 'wb') as lib_file:
+    plistlib.dump({
+        'public.openTypeMeta': {
+            'dlng': ['Latn'],
+            'slng': ['Latn'],
+        }
+    }, lib_file, pretty_print=True)
