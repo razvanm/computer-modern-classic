@@ -231,7 +231,7 @@ f['uni0361'].width = 0
 
 # Fix the FontBakery:com.google.fonts/check/glyphsets/shape_languages
 # related to Romanian.
-f.addLookup('loclRomanian', 'gsub_single', None, (('locl',(('latn',('ROM')),)),))
+f.addLookup('loclRomanian', 'gsub_single', None, (('locl',(('DFLT',('ROM')),)),))
 f.addLookupSubtable('loclRomanian', 'loclRomanianSubtable')
 f['scedilla'].addPosSub('loclRomanianSubtable', 'scomma')
 f['Scedilla'].addPosSub('loclRomanianSubtable', 'Scomma')

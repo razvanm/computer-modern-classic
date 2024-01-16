@@ -1,6 +1,6 @@
 languagesystem DFLT dflt;
+languagesystem DFLT ROM ;
 languagesystem latn dflt;
-languagesystem latn ROM ;
 
 
 # GSUB 
@@ -35,7 +35,7 @@ lookup ligaStandardLigatureslookup0 {
 
 feature locl {
 
- script latn;
+ script DFLT;
      language ROM  exclude_dflt;
       lookup loclRomanian;
 } locl;
